@@ -1,0 +1,12 @@
+# Produces a slightly uneven bottom surface, so the resting height is sensitive to the shape of (nearly) flat structures.
+
+sim_params:
+wrldtyp:2
+wrldsiz:20.0
+wrldmap:~
+M 3 3
+-0.002 -0.002 -0.002 
+-0.002  0     -0.002 
+-0.002 -0.002 -0.002~
+wrldwat:-10.0
+wrldbnd:0

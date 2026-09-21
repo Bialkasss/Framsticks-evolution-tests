@@ -1,0 +1,13 @@
+patiki:
+
+q1: 
+q2: I believe that mutation intensity will impact speed of evolution, and how much the strcutre will differ from the start ones. I believe that with more mutation intensity the structure will be more different from start ones, as more will change in the structue. Im not sure how it will affect the optimization criterrion. I think we would need a 'perfect balance' in this parameter, as too low eand too high will fail.
+q3: The number of individuals mutated: 45
+
+The number of individuals crossed over: 20
+
+Order: Crossover -> Mutation 
+
+Whether the sets of mutated and crossed over individuals may or must overlap: They may overlap. It is not said that if we crossover, then we also mutate. The both operations are done with some probability.
+
+Are clones possible and why: Yes, they are. It is because we have a probability of mutation and crossover. If we will draw not mutating or crossing over, we will have clones in next generation.

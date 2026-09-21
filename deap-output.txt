@@ -1,0 +1,7 @@
+Microsoft Windows [Version 10.0.26200.9445]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\MAGISTER\SEM1\BIO_ALGS\Framsticks>'run-deap-examples.cmd' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\MAGISTER\SEM1\BIO_ALGS\Framsticks>

@@ -1,0 +1,12 @@
+Hornby's classification:
+
+f0: open-ended -> non-generative -> direct
+f1: open-ended -> non-generative -> indirect
+f4: open-ended -> generative -> implicit
+f9: open-ended-> non-generative -> indirect(L can mean adding something or retracking to what we already have) [we can also argue for direct as L always goes left]
+permutation in TSP and QAP: parametrization
+f1 genotypes:
+
+square: /*1*/X(,,X(,,X(,,X)))
+spiky structure:  /*1*/X(X,RRX(X,RRX(X,RRX(X,X,X),X),X),X)
+
