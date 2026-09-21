@@ -1,2 +1,0 @@
-run,genetic_format,mutation_intensity,generations_completed,duration_seconds,hof_genotype,hof_velocity
-0,1,0.0,87,237.3077371,"RL(Qf(FcfX[@, 1:6.152, p:0.951][*]), RLmX[@,2:1][*][S][|, -4:0.152])",0.0015267839155143857

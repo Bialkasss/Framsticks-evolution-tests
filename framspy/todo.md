@@ -1,0 +1,1 @@
+python plot_evolution_results.py -directory ./task3-results -criterion velocity -plot_type all -y_min 0 -output_prefix velocity_probab_plot

@@ -1,5 +1,6 @@
 import argparse
 import csv
+import re
 from collections import defaultdict
 from pathlib import Path
 
@@ -21,6 +22,11 @@ def label_from_prefix(prefix):
     label = Path(prefix).name
     if label.startswith('results-'):
         label = label[len('results-'):]
+
+    probability_match = re.match(r'^(?:.+-)?probab-(\d+)(?:-\d+)?$', label)
+    if probability_match:
+        return probability_match.group(1)
+
     return label.replace('-', ' ')
 
 
@@ -51,7 +57,7 @@ def plot_individual_runs(rows, criterion, output, y_min):
                 label=genetic_format if run == min(runs) else None,
                 alpha=0.75,
             )
-    axis.set(title='(Penalty) Best individual in each evolutionary run by genetic format', xlabel='Generation', ylabel='Fitness')
+    axis.set(title='(Penalty) Best individual in each evolutionary run by mutation probability', xlabel='Generation', ylabel='Fitness')
     if y_min is not None:
         axis.set_ylim(bottom=y_min)
     axis.legend()
@@ -75,7 +81,7 @@ def plot_aggregated_runs(rows, criterion, deviation_divisor, output, y_min):
         deviations = np.array([np.std(by_generation[generation]) for generation in generations]) / deviation_divisor
         axis.plot(generations, means, color=colors[genetic_format], label=genetic_format)
         axis.fill_between(generations, means - deviations, means + deviations, color=colors[genetic_format], alpha=0.18)
-    axis.set(title='(Penalty) Mean best fitness by genetic format with standard deviation', xlabel='Generation', ylabel='Fitness')
+    axis.set(title='(Penalty) Mean best fitness by mutation probability with standard deviation', xlabel='Generation', ylabel='Fitness')
     if y_min is not None:
         axis.set_ylim(bottom=y_min)
     axis.legend()
@@ -96,10 +102,12 @@ def plot_boxplots(rows, criterion, output):
     duration_values = [groups[genetic_format]['duration'] for genetic_format in labels]
 
     figure, axes = plt.subplots(1, 2, figsize=(12, 6))
-    axes[0].boxplot(quality_values, labels=labels)
-    axes[0].set(title='(Penalty) Hall of Fame quality', xlabel='Genetic format', ylabel='Fitness')
-    axes[1].boxplot(duration_values, labels=labels)
-    axes[1].set(title='(Penalty) Evolution duration', xlabel='Genetic format', ylabel='seconds')
+    axes[0].boxplot(quality_values)
+    axes[0].set_xticklabels(labels)
+    axes[0].set(title='(Penalty) Hall of Fame quality', xlabel='Mutation probability', ylabel='Fitness')
+    axes[1].boxplot(duration_values)
+    axes[1].set_xticklabels(labels)
+    axes[1].set(title='(Penalty) Evolution duration', xlabel='Mutation probability', ylabel='seconds')
     for axis in axes:
         axis.grid(axis='y', alpha=0.25)
     figure.tight_layout()

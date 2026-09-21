@@ -1,0 +1,2 @@
+run,genetic_format,mutation_intensity,generations_completed,duration_seconds,hof_genotype,hof_velocity
+0,1,0.0,110,275.69917289099976,"(QfX[G]L(RffX[N, 5:1, 8:1][|, 3:1, r:0.892]X[Gpart][|, 2:1][G][*], ), X, X[N, 5:1, -1:1, -6:1][Gpart, rz:2.183][N, -1:1, -2:1,-6:1.059](FX[S][N,-11:1,in:0.831][S][|, -8:1]))",0.0069739272734048495
