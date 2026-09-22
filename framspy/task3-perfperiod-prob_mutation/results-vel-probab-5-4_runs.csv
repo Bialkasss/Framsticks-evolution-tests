@@ -1,0 +1,2 @@
+run,genetic_format,mutation_intensity,generations_completed,duration_seconds,hof_genotype,hof_velocity
+0,1,0.0,83,253.40797250000014,"rC(X, cXXCCCX[@, 1:-0.633,p:1,p:1][*]L(X[|, -1:0.819]X[|,-2:1.635]))",0.0007065044842793643

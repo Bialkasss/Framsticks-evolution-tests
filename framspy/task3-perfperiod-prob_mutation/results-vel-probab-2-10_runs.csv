@@ -1,0 +1,2 @@
+run,genetic_format,mutation_intensity,generations_completed,duration_seconds,hof_genotype,hof_velocity
+0,1,0.0,88,181.6303632890049,"LX[*][G][N,0:1,1:1.491]((((rX[S][T][*](FFLX[|, 2:3.342,r:0.914][@, 1:-1.855][*]))), ))",0.0002782989943040471

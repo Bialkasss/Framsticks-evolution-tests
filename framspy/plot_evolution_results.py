@@ -48,6 +48,7 @@ def plot_individual_runs(rows, criterion, output, y_min):
         runs = defaultdict(list)
         for run, generation, quality in values:
             runs[run].append((generation, quality))
+        longest_values = None
         for run, run_values in sorted(runs.items()):
             run_values.sort()
             axis.plot(
@@ -57,9 +58,22 @@ def plot_individual_runs(rows, criterion, output, y_min):
                 label=genetic_format if run == min(runs) else None,
                 alpha=0.75,
             )
-    axis.set(title='(Penalty) Best individual in each evolutionary run by mutation probability', xlabel='Generation', ylabel='Fitness')
+            if longest_values is None or len(run_values) > len(longest_values):
+                longest_values = run_values
+        axis.annotate(
+            genetic_format,
+            xy=longest_values[-1],
+            xytext=(6, 0),
+            textcoords='offset points',
+            color=colors[genetic_format],
+            va='center',
+            fontweight='bold',
+            bbox={'facecolor': 'white', 'edgecolor': 'none', 'alpha': 0.8, 'pad': 1.5},
+        )
+    axis.set(title='Best individual in each evolutionary run by mutation probability', xlabel='Generation', ylabel='Fitness')
     if y_min is not None:
         axis.set_ylim(bottom=y_min)
+    axis.margins(x=0.08)
     axis.legend()
     axis.grid(alpha=0.25)
     figure.tight_layout()
@@ -81,9 +95,20 @@ def plot_aggregated_runs(rows, criterion, deviation_divisor, output, y_min):
         deviations = np.array([np.std(by_generation[generation]) for generation in generations]) / deviation_divisor
         axis.plot(generations, means, color=colors[genetic_format], label=genetic_format)
         axis.fill_between(generations, means - deviations, means + deviations, color=colors[genetic_format], alpha=0.18)
-    axis.set(title='(Penalty) Mean best fitness by mutation probability with standard deviation', xlabel='Generation', ylabel='Fitness')
+        axis.annotate(
+            genetic_format,
+            xy=(generations[-1], means[-1]),
+            xytext=(6, 0),
+            textcoords='offset points',
+            color=colors[genetic_format],
+            va='center',
+            fontweight='bold',
+            bbox={'facecolor': 'white', 'edgecolor': 'none', 'alpha': 0.8, 'pad': 1.5},
+        )
+    axis.set(title='Mean best fitness by mutation probability with standard deviation', xlabel='Generation', ylabel='Fitness')
     if y_min is not None:
         axis.set_ylim(bottom=y_min)
+    axis.margins(x=0.08)
     axis.legend()
     axis.grid(alpha=0.25)
     figure.tight_layout()
@@ -104,10 +129,10 @@ def plot_boxplots(rows, criterion, output):
     figure, axes = plt.subplots(1, 2, figsize=(12, 6))
     axes[0].boxplot(quality_values)
     axes[0].set_xticklabels(labels)
-    axes[0].set(title='(Penalty) Hall of Fame quality', xlabel='Mutation probability', ylabel='Fitness')
+    axes[0].set(title='Hall of Fame quality', xlabel='Mutation probability', ylabel='Fitness')
     axes[1].boxplot(duration_values)
     axes[1].set_xticklabels(labels)
-    axes[1].set(title='(Penalty) Evolution duration', xlabel='Mutation probability', ylabel='seconds')
+    axes[1].set(title='Evolution duration', xlabel='Mutation probability', ylabel='seconds')
     for axis in axes:
         axis.grid(axis='y', alpha=0.25)
     figure.tight_layout()
@@ -124,6 +149,7 @@ def main():
     parser.add_argument('-output_prefix', default='plots', help='Prefix for generated PNG files.')
     parser.add_argument('-runs_to_plot', type=int, default=5, help='Number of runs to plot from each input prefix, starting with run 0.')
     parser.add_argument('-plot_type', choices=['individual', 'aggregated', 'boxplots', 'all'], default='individual', help='Plot type to generate.')
+    parser.add_argument('-split_probability_groups', action='store_true', help='Create separate individual and aggregated plots for configurations 0-2 and 3-5.')
     parser.add_argument('-y_min', type=float, default=None, help='Optional lower bound of the fitness axis. By default, matplotlib chooses it.')
     args = parser.parse_args()
     if args.deviation_divisor <= 0:
@@ -159,10 +185,23 @@ def main():
         run_rows.extend(dict(row, label=label) for row in filter_first_runs(runs, args.runs_to_plot))
     if not generation_rows or not run_rows:
         raise ValueError('No result files contain the requested criterion: ' + args.criterion)
-    if args.plot_type in ('individual', 'all'):
-        plot_individual_runs(generation_rows, args.criterion, args.output_prefix + '_individual_runs.png', args.y_min)
-    if args.plot_type in ('aggregated', 'all'):
-        plot_aggregated_runs(generation_rows, args.criterion, args.deviation_divisor, args.output_prefix + '_aggregated_runs.png', args.y_min)
+
+    if args.split_probability_groups:
+        generation_groups = {
+            '0_1_2': [row for row in generation_rows if row['label'] in {'0', '1', '2'}],
+            '3_4_5': [row for row in generation_rows if row['label'] in {'3', '4', '5'}],
+        }
+    else:
+        generation_groups = {'all': generation_rows}
+
+    for group_name, group_rows in generation_groups.items():
+        if not group_rows:
+            continue
+        suffix = '' if group_name == 'all' else '_' + group_name
+        if args.plot_type in ('individual', 'all'):
+            plot_individual_runs(group_rows, args.criterion, args.output_prefix + '_individual_runs' + suffix + '.png', args.y_min)
+        if args.plot_type in ('aggregated', 'all'):
+            plot_aggregated_runs(group_rows, args.criterion, args.deviation_divisor, args.output_prefix + '_aggregated_runs' + suffix + '.png', args.y_min)
     if args.plot_type in ('boxplots', 'all'):
         plot_boxplots(run_rows, args.criterion, args.output_prefix + '_boxplots.png')
     print('Saved plots with prefix %s' % args.output_prefix)

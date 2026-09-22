@@ -157,6 +157,7 @@ def parseArguments():
 	parser.add_argument('-workers', type=int, default=1, help="Number of processes used for independent runs, default: 1.")
 	parser.add_argument('-output_prefix', default='evolution_results', help="Prefix for generated CSV files.")
 	parser.add_argument('-seed', type=int, default=None, help="Base random seed. Run number is added to this value.")
+	parser.add_argument('-dynamic_mutation_schedule', action='store_true', help="Start with structural f1 mutations and transition to neural fine-tuning.")
 	parser.add_argument('-tournament', type=int, default=5, help="Tournament size, default: 5.")
 	parser.add_argument('-pmut', type=float, default=0.9, help="Probability of mutation, default: 0.9")
 	parser.add_argument('-pxov', type=float, default=0.2, help="Probability of crossover, default: 0.2")
@@ -190,6 +191,26 @@ def save_genotypes(filename, OPTIMIZATION_CRITERIA, hof):
 	print("Saved '%s' (%d)" % (filename, len(hof)))
 
 
+def set_dynamic_mutation_probabilities(generation):
+	"""Move from body-shape exploration to neural fine-tuning over 60 generations."""
+	if generation <= 30:
+		progress = generation / 30.0
+		start = (0.25, 0.12, 0.18, 0.12, 0.02, 0.04, 0.05, 0.2, 0.03)
+		end = (0.15, 0.06, 0.10, 0.12, 0.03, 0.08, 0.10, 0.7, 0.05)
+	elif generation <= 60:
+		progress = (generation - 30) / 30.0
+		start = (0.15, 0.06, 0.10, 0.12, 0.03, 0.08, 0.10, 0.7, 0.05)
+		end = (0.05, 0.02, 0.03, 0.08, 0.03, 0.10, 0.12, 1.5, 0.08)
+	else:
+		return
+	values = [first + progress * (last - first) for first, last in zip(start, end)]
+	for parameter, value in zip(
+		('f1_smX', 'f1_smJunct', 'f1_smComma', 'f1_smModif', 'f1_nmNeu', 'f1_nmConn', 'f1_nmProp', 'f1_nmWei', 'f1_nmVal'),
+		values,
+	):
+		setattr(frams.GenMan, parameter, value)
+
+
 def run_evolution(task):
 	"""Run one independent experiment in the current process."""
 	arguments, run_id = task
@@ -204,6 +225,8 @@ def run_evolution(task):
 	FramsticksLib.DETERMINISTIC = False
 	worker_home = tempfile.mkdtemp(prefix='framsticks-home-')
 	framsLib = FramsticksLib(parsed_args.path, parsed_args.lib, parsed_args.sim, home_dir=worker_home)
+	if parsed_args.dynamic_mutation_schedule:
+		set_dynamic_mutation_probabilities(0)
 	print("\n---------------------------> f9 mutation intensity =", frams.GenMan.f9_mut)
 	mutation_intensity = float(frams.GenMan.f9_mut._value())
 	print("Run %d: f9 mutation intensity = %s" % (run_id, mutation_intensity), flush=True)
@@ -258,6 +281,8 @@ def run_evolution(task):
 	for generation in range(1, parsed_args.generations + 1):
 		if parsed_args.stagnation is not None and stagnant_generations >= parsed_args.stagnation:
 			break
+		if parsed_args.dynamic_mutation_schedule:
+			set_dynamic_mutation_probabilities(generation)
 		offspring = toolbox.select(pop, len(pop))
 		offspring = list(map(toolbox.clone, offspring))
 		offspring = algorithms.varAnd(offspring, toolbox, parsed_args.pxov, parsed_args.pmut)

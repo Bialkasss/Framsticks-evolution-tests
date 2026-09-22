@@ -1,0 +1,2 @@
+run,genetic_format,mutation_intensity,generations_completed,duration_seconds,hof_genotype,hof_velocity
+0,1,0.0,109,331.44449149999946,"QX[Gpart, rz:0]C((XXf(X[N, -1:-2.272,-1:4.892,-1:2.723,-1:-0.898]Q(, (QX[@, -2:3.435, p:1]qFX)))))",0.0025160409780999493
