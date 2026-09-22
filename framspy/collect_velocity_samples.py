@@ -52,7 +52,7 @@ def write_gen_file(filename: str, samples: List[Dict[str, object]]) -> None:
             output.write(framswriter.from_collection({
                 "_classname": "org",
                 "genotype": sample["genotype"],
-                "velocity": sample["velocity"],
+                "velocity": sample["fitness"],
                 "format": sample["genetic_format"],
                 "run": sample["run"],
                 "sample_index": sample["sample_index"],
