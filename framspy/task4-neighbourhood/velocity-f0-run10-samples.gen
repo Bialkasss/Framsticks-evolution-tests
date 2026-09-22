@@ -1,0 +1,403 @@
+org:
+genotype:~
+//0
+p:
+p:1
+j:0,1~
+velocity:0.0
+format:0
+run:10
+sample_index:0
+
+org:
+genotype:~
+//0
+p:0.386, -0.352, -0.739
+p:1.0
+j:0, 1
+~
+velocity:3.396753794797837e-19
+format:0
+run:10
+sample_index:1
+
+org:
+genotype:~
+//0
+p:0.386, -0.352, -0.739
+p:1.0
+j:0, 1
+n:j=0, d=|
+~
+velocity:4.620518454611642e-08
+format:0
+run:10
+sample_index:2
+
+org:
+genotype:~
+//0
+p:0.386, -0.352, -0.739
+p:1.0, fr=0.077
+j:0, 1
+n:j=0, d=|
+~
+velocity:3.3842828807187305e-07
+format:0
+run:10
+sample_index:3
+
+org:
+genotype:~
+//0
+p:0.386, -0.352, -0.739
+p:1.296, 0.173, 0.376, fr=0.077
+j:0, 1
+n:j=0, d=|
+~
+velocity:1.099881133831279e-06
+format:0
+run:10
+sample_index:4
+
+org:
+genotype:~
+//0
+p:0.617, -0.412, -0.255
+p:1.296, 0.173, 0.376, fr=0.077
+j:0, 1
+n:j=0, d=|
+~
+velocity:3.6694869826553873e-06
+format:0
+run:10
+sample_index:5
+
+org:
+genotype:~
+//0
+p:0.617, -0.412, -0.255
+p:1.296, 0.173, 0.376, fr=0.077
+j:0, 1, stif=0.956
+n:j=0, d=|
+~
+velocity:6.22256293499555e-06
+format:0
+run:10
+sample_index:6
+
+org:
+genotype:~
+//0
+p:0.617, -0.412, -0.255
+p:1.296, 0.173, 0.376, fr=0.077
+j:0, 1, stif=0.956
+n:j=0, d=|
+n:p=0, d=Gpart
+c:0, 1, 4.069
+~
+velocity:0.00018614910889950577
+format:0
+run:10
+sample_index:7
+
+org:
+genotype:~
+//0
+p:0.617, -0.412, -0.255
+p:1.296, 0.173, 0.376, fr=0.077
+j:0, 1, stif=0.956
+n:j=0, d=|
+n:p=0, d=Gpart
+c:0, 1, 5.728
+~
+velocity:0.0001990590377399087
+format:0
+run:10
+sample_index:8
+
+org:
+genotype:~
+//0
+p:0.617, -0.412, -0.255, fr=0.133
+p:1.296, 0.173, 0.376, fr=0.077
+j:0, 1, stif=0.956
+n:j=0, d=|
+n:p=0, d=Gpart
+c:0, 1, 5.728
+~
+velocity:0.00021664275329006882
+format:0
+run:10
+sample_index:9
+
+org:
+genotype:~
+//0
+p:0.617, -0.412, -0.255, fr=0.133
+p:1.296, 0.173, 0.376, fr=0.119
+j:0, 1, stif=0.956
+n:j=0, d=|
+n:p=0, d=Gpart
+c:0, 1, 5.728
+~
+velocity:0.00024561255066411113
+format:0
+run:10
+sample_index:10
+
+org:
+genotype:~
+//0
+p:0.617, -0.412, -0.255, fr=0.133
+p:1.296, 0.173, 0.376, fr=0.119
+j:0, 1, stif=0.956
+n:j=0, d=|
+n:p=0, d=Gpart
+c:0, 1, 3.835
+~
+velocity:0.00032870690984037926
+format:0
+run:10
+sample_index:11
+
+org:
+genotype:~
+//0
+p:0.508, -0.617, -0.142, fr=0.133
+p:1.296, 0.173, 0.376, fr=0.119
+j:0, 1, stif=0.956
+n:j=0, d=|
+n:p=0, d=Gpart
+c:0, 1, 3.835
+~
+velocity:0.0003828169209045492
+format:0
+run:10
+sample_index:12
+
+org:
+genotype:~
+//0
+p:0.508, -0.617, -0.142, fr=0.133
+p:1.296, 0.173, 0.376, fr=0.119
+j:0, 1, stif=0.956
+n:j=0, d=|:r=0.936
+n:p=0, d=Gpart
+c:0, 1, 3.835
+~
+velocity:0.00038316168256901333
+format:0
+run:10
+sample_index:13
+
+org:
+genotype:~
+//0
+p:0.508, -0.617, -0.142, fr=0.133
+p:1.296, 0.173, 0.376, fr=0.119
+j:0, 1, stif=0.904
+n:j=0, d=|:r=0.936
+n:p=0, d=Gpart
+c:0, 1, 3.835
+~
+velocity:0.000395032226068824
+format:0
+run:10
+sample_index:14
+
+org:
+genotype:~
+//0
+p:0.508, -0.617, -0.142, fr=0.133
+p:1.296, 0.173, 0.376, fr=0.119
+j:0, 1, stif=0.904
+n:j=0, d=|:r=0.851
+n:p=0, d=Gpart
+c:0, 1, 3.835
+~
+velocity:0.0004081436685019744
+format:0
+run:10
+sample_index:15
+
+org:
+genotype:~
+//0
+p:0.508, -0.617, -0.142, fr=0.133
+p:1.296, 0.173, 0.376, fr=0.119
+j:0, 1, stif=0.904
+n:j=0, d=|:r=0.851
+n:p=0, d=Gpart:ry=-2.434
+c:0, 1, 3.835
+~
+velocity:0.0028510104846373755
+format:0
+run:10
+sample_index:16
+
+org:
+genotype:~
+//0
+p:0.508, -0.617, -0.142, fr=0.133
+p:1.296, 0.173, 0.376, fr=0.119
+j:0, 1, stif=0.724
+n:j=0, d=|:r=0.851
+n:p=0, d=Gpart:ry=-2.434
+c:0, 1, 3.835
+~
+velocity:0.0030075113941033047
+format:0
+run:10
+sample_index:17
+
+org:
+genotype:~
+//0
+p:0.508, -0.617, -0.142, fr=0.133
+p:1.296, 0.173, 0.376, fr=0.119
+j:0, 1, stif=0.574
+n:j=0, d=|:r=0.851
+n:p=0, d=Gpart:ry=-2.434
+c:0, 1, 3.835
+~
+velocity:0.0033037039439984864
+format:0
+run:10
+sample_index:18
+
+org:
+genotype:~
+//0
+p:0.508, -0.617, -0.142, fr=0.133
+p:1.296, 0.173, 0.376, fr=0.157
+j:0, 1, stif=0.574
+n:j=0, d=|:r=0.851
+n:p=0, d=Gpart:ry=-2.434
+c:0, 1, 3.835
+~
+velocity:0.0034445420231165647
+format:0
+run:10
+sample_index:19
+
+org:
+genotype:~
+//0
+p:0.508, -0.617, -0.142, fr=0.133
+p:1.296, 0.173, 0.376, fr=0.157
+j:0, 1, stif=0.541
+n:j=0, d=|:r=0.851
+n:p=0, d=Gpart:ry=-2.434
+c:0, 1, 3.835
+~
+velocity:0.0036000546068142418
+format:0
+run:10
+sample_index:20
+
+org:
+genotype:~
+//0
+p:0.508, -0.617, -0.142, fr=0.237
+p:1.296, 0.173, 0.376, fr=0.157
+j:0, 1, stif=0.541
+n:j=0, d=|:r=0.851
+n:p=0, d=Gpart:ry=-2.434
+c:0, 1, 3.835
+~
+velocity:0.004121412722986531
+format:0
+run:10
+sample_index:21
+
+org:
+genotype:~
+//0
+p:0.865, -0.609, -0.181, fr=0.237
+p:1.296, 0.173, 0.376, fr=0.157
+j:0, 1, stif=0.541
+n:j=0, d=|:r=0.851
+n:p=0, d=Gpart:ry=-2.434
+c:0, 1, 3.835
+~
+velocity:0.004184547698599792
+format:0
+run:10
+sample_index:22
+
+org:
+genotype:~
+//0
+p:0.602, -0.598, -0.123, fr=0.237
+p:1.296, 0.173, 0.376, fr=0.157
+j:0, 1, stif=0.541
+n:j=0, d=|:r=0.851
+n:p=0, d=Gpart:ry=-2.434
+c:0, 1, 3.835
+~
+velocity:0.004381506593537839
+format:0
+run:10
+sample_index:23
+
+org:
+genotype:~
+//0
+p:0.602, -0.598, -0.123, fr=0.237
+p:1.296, 0.173, 0.376, fr=0.157
+j:0, 1, stif=0.541
+n:j=0, d=|:r=0.851
+n:p=0, d=Gpart:ry=-2.434
+c:0, 1, 6.031
+~
+velocity:0.004384503526088496
+format:0
+run:10
+sample_index:24
+
+org:
+genotype:~
+//0
+p:0.602, -0.598, -0.123, fr=0.237
+p:1.296, 0.173, 0.376, fr=0.157
+j:0, 1, stif=0.414
+n:j=0, d=|:r=0.851
+n:p=0, d=Gpart:ry=-2.434
+c:0, 1, 6.031
+~
+velocity:0.004968582224385751
+format:0
+run:10
+sample_index:25
+
+org:
+genotype:~
+//0
+p:0.602, -0.598, -0.123, fr=0.237
+p:1.296, 0.173, 0.376, fr=0.157
+j:0, 1, stif=0.33
+n:j=0, d=|:r=0.851
+n:p=0, d=Gpart:ry=-2.434
+c:0, 1, 6.031
+~
+velocity:0.004973697936580685
+format:0
+run:10
+sample_index:26
+
+org:
+genotype:~
+//0
+p:0.602, -0.598, -0.123, fr=0.237
+p:1.296, 0.173, 0.376, fr=0.157
+j:0, 1, stif=0.33
+n:j=0, d=|:r=0.851
+n:p=0, d="Gpart:ry=-2.434, rz=0.086"
+c:0, 1, 6.031
+~
+velocity:0.005650505883995531
+format:0
+run:10
+sample_index:27
+

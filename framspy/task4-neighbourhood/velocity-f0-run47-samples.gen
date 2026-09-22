@@ -1,0 +1,351 @@
+org:
+genotype:~
+//0
+p:
+p:1
+j:0,1~
+velocity:0.0
+format:0
+run:47
+sample_index:0
+
+org:
+genotype:~
+//0
+p:
+p:1.0
+p:1.323, -0.315, 0.225
+j:0, 1
+j:2, 1
+~
+velocity:7.161652084128395e-14
+format:0
+run:47
+sample_index:1
+
+org:
+genotype:~
+//0
+p:fr=0.015
+p:1.0
+p:1.323, -0.315, 0.225
+j:0, 1
+j:2, 1
+~
+velocity:2.9255579274713033e-10
+format:0
+run:47
+sample_index:2
+
+org:
+genotype:~
+//0
+p:fr=0.015
+p:1.0
+p:1.323, -0.315, 0.225
+j:0, 1
+j:2, 1
+n:j=0, d=|
+~
+velocity:1.913925215322943e-07
+format:0
+run:47
+sample_index:3
+
+org:
+genotype:~
+//0
+p:fr=0.015
+p:1.0
+p:1.323, -0.315, 0.225
+j:0, 1
+j:2, 1
+n:j=0, d=|
+n:j=1, d=G
+c:0, 1, -3.424
+~
+velocity:7.51115206421318e-06
+format:0
+run:47
+sample_index:4
+
+org:
+genotype:~
+//0
+p:fr=0.015
+p:1.0
+p:1.323, -0.315, 0.225
+j:0, 2
+j:1, 2
+n:j=0, d=|
+n:j=1, d=G
+c:0, 1, -3.424
+~
+velocity:8.966713720148502e-05
+format:0
+run:47
+sample_index:5
+
+org:
+genotype:~
+//0
+p:fr=0.015
+p:1.0, fr=0.97
+p:1.323, -0.315, 0.225
+j:0, 2
+j:1, 2
+n:j=0, d=|
+n:j=1, d=G
+c:0, 1, -3.424
+~
+velocity:0.0008696532528212588
+format:0
+run:47
+sample_index:6
+
+org:
+genotype:~
+//0
+p:fr=0.015
+p:1.0, fr=0.97
+p:1.323, -0.315, 0.225
+j:0, 2
+j:1, 2, stif=0.971
+n:j=0, d=|
+n:j=1, d=G
+c:0, 1, -3.424
+~
+velocity:0.0009604217154876628
+format:0
+run:47
+sample_index:7
+
+org:
+genotype:~
+//0
+p:fr=0.015
+p:1.0, fr=0.97
+p:1.323, -0.315, 0.225, fr=0.687
+j:0, 2
+j:1, 2, stif=0.971
+n:j=0, d=|
+n:j=1, d=G
+c:0, 1, -3.424
+~
+velocity:0.0010430689756107214
+format:0
+run:47
+sample_index:8
+
+org:
+genotype:~
+//0
+p:fr=0.015
+p:1.0, fr=0.97
+p:1.323, -0.315, 0.225, fr=0.687
+j:0, 2
+j:1, 2, stif=0.964
+n:j=0, d=|
+n:j=1, d=G
+c:0, 1, -3.424
+~
+velocity:0.0010585641556231666
+format:0
+run:47
+sample_index:9
+
+org:
+genotype:~
+//0
+p:fr=0.015
+p:1.0, fr=0.97
+p:1.323, -0.315, 0.225, fr=0.687
+j:0, 2
+j:1, 2, stif=0.927
+n:j=0, d=|
+n:j=1, d=G
+c:0, 1, -3.424
+~
+velocity:0.001058564320893065
+format:0
+run:47
+sample_index:10
+
+org:
+genotype:~
+//0
+p:fr=0.015
+p:1.0, fr=0.97
+p:1.323, -0.315, 0.225, fr=0.687
+j:0, 2
+j:1, 2, stif=0.875
+n:j=0, d=|
+n:j=1, d=G
+c:0, 1, -3.424
+~
+velocity:0.001083331615081327
+format:0
+run:47
+sample_index:11
+
+org:
+genotype:~
+//0
+p:fr=0.015
+p:1.0, fr=0.97
+p:1.323, -0.315, 0.225, fr=0.687
+j:0, 2
+j:1, 2, stif=0.875
+n:j=0, d=|
+n:j=1, d=G
+c:0, 1, -1.634
+~
+velocity:0.0011786250463546352
+format:0
+run:47
+sample_index:12
+
+org:
+genotype:~
+//0
+p:fr=0.015
+p:1.0, fr=0.97
+p:1.323, -0.315, 0.225, fr=0.687
+j:0, 2, stif=0.838
+j:1, 2, stif=0.875
+n:j=0, d=|
+n:j=1, d=G
+c:0, 1, -1.634
+~
+velocity:0.0012257566002237244
+format:0
+run:47
+sample_index:13
+
+org:
+genotype:~
+//0
+p:fr=0.015
+p:1.0, fr=0.97
+p:1.323, -0.315, 0.225, fr=0.687
+j:0, 2, stif=0.838
+j:1, 2, stif=0.897
+n:j=0, d=|
+n:j=1, d=G
+c:0, 1, -1.634
+~
+velocity:0.0012455362183591751
+format:0
+run:47
+sample_index:14
+
+org:
+genotype:~
+//0
+p:fr=0.015
+p:1.0, fr=0.97
+p:1.323, -0.315, 0.225, fr=0.687
+j:0, 2, stif=0.925
+j:1, 2, stif=0.897
+n:j=0, d=|
+n:j=1, d=G
+c:0, 1, -1.634
+~
+velocity:0.001246931511848285
+format:0
+run:47
+sample_index:15
+
+org:
+genotype:~
+//0
+p:fr=0.015
+p:1.0, fr=0.97
+p:1.323, -0.315, 0.225, fr=0.687
+j:0, 2, stif=0.925
+j:1, 2, stif=0.912
+n:j=0, d=|
+n:j=1, d=G
+c:0, 1, -1.634
+~
+velocity:0.001248657702845456
+format:0
+run:47
+sample_index:16
+
+org:
+genotype:~
+//0
+p:fr=0.015
+p:1.0, fr=0.97
+p:1.323, -0.315, 0.225, fr=0.687
+p:-0.175, 0.765, -0.469
+j:0, 2, stif=0.925
+j:1, 2, stif=0.912
+j:3, 0
+n:j=0, d=|
+n:j=1, d=G
+c:0, 1, -1.634
+~
+velocity:0.0014976843474386885
+format:0
+run:47
+sample_index:17
+
+org:
+genotype:~
+//0
+p:fr=0.895
+p:1.0, fr=0.97
+p:1.323, -0.315, 0.225, fr=0.687
+p:-0.175, 0.765, -0.469
+j:0, 2, stif=0.925
+j:1, 2, stif=0.912
+j:3, 0
+n:j=0, d=|
+n:j=1, d=G
+c:0, 1, -1.634
+~
+velocity:0.004833546259329836
+format:0
+run:47
+sample_index:18
+
+org:
+genotype:~
+//0
+p:fr=0.895
+p:1.0, fr=0.97
+p:1.323, -0.315, 0.225, fr=0.687
+p:-0.175, 0.765, -0.469
+j:0, 2, stif=0.925
+j:1, 2, stif=0.912
+j:3, 0, stif=0.958
+n:j=0, d=|
+n:j=1, d=G
+c:0, 1, -1.634
+~
+velocity:0.006536732990621529
+format:0
+run:47
+sample_index:19
+
+org:
+genotype:~
+//0
+p:fr=0.895
+p:1.0, fr=0.97
+p:1.323, -0.315, 0.225, fr=0.687
+p:-0.175, 0.765, -0.469
+j:0, 2, stif=0.925
+j:1, 2, stif=0.912
+j:3, 0, stif=0.958
+n:j=0, d=|
+n:j=1, d=G
+c:0, 1, -1.144
+~
+velocity:0.0073468999525726515
+format:0
+run:47
+sample_index:20
+
