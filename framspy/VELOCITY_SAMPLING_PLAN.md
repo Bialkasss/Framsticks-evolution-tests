@@ -17,17 +17,17 @@ at least 20 evaluated mutants.
   poor starting point within a representation and makes the climbs comparable.
 - Use greedy, mutation-only hill climbing. For every parent, generate 20
   distinct mutants, evaluate the complete batch, and accept only the best strict
-  improvement. This records the fitness climb and naturally preserves local
-  optima as final samples.
-- Run 50 independent climbs for each representation. The expected output is
-  well above 200 samples, while `merge_velocity_samples.py` checks the actual
-  number of unique fitness values and fails when it is below 200.
-- Randomize Framsticks mutation state per process. `deterministic.sim` makes
-  evaluations repeatable; `FramsticksLib.DETERMINISTIC` must remain false so
-  independent climbs do not follow the same mutation sequence.
-- Reject invalid mutation results, duplicate mutants, missing evaluations, and
-  `FITNESS_VALUE_INFEASIBLE_SOLUTION` (`-999999.0`). Rejected mutants remain in
-  the neighborhood CSV with their status for auditability.
+  improvement as the next parent. Archive the best feasible candidate from
+  stalled iterations as an internal path point without changing the greedy
+  parent trajectory.
+- Target 200 exported samples per representation rather than a fixed number of
+  runs. Each climb keeps its full candidate path internally, then exports four
+  fitness-quantile checkpoints by default: the initial solution, two middle
+  fitness checkpoints, and the best path candidate. The launcher starts more
+  runs as needed until the selected representation reaches 200 saved samples.
+- `merge_velocity_samples.py` checks the actual count separately for f0, f1,
+  f4, and fH and fails if any representation is below 200. Invalid mutants
+  remain in the neighborhood CSV with their status for auditability.
 - Run independent climbs in parallel, with a bounded worker count. Each worker
   owns one Framsticks process, avoiding shared native-library state.
 
@@ -37,13 +37,13 @@ From `framspy/` in Git Bash, collect only the representations assigned to that
 laptop:
 
 ```bash
-FORMAT_LIST="0 1" RUNS=50 OUTPUT_DIR=task4-neighbourhood ./run_velocity_samples.sh
+FORMAT_LIST="0 1" OUTPUT_DIR=task4-neighbourhood ./run_velocity_samples.sh
 ```
 
 The other laptop can run the complementary formats:
 
 ```bash
-FORMAT_LIST="4 H" RUNS=50 OUTPUT_DIR=task4-neighbourhood ./run_velocity_samples.sh
+FORMAT_LIST="4 H" OUTPUT_DIR=task4-neighbourhood ./run_velocity_samples.sh
 ```
 
 The launcher is modular. `MODE=collect` is the default and only runs the
@@ -53,6 +53,14 @@ run the final analysis once:
 
 ```bash
 MODE=analyze OUTPUT_DIR=task4-neighbourhood ./run_velocity_samples.sh
+```
+
+Analysis uses the first 200 samples per representation by default for every
+plot, neighborhood statistic, and conclusion. The raw merged CSV files still
+contain all collected samples. To change the plotting subset:
+
+```bash
+MODE=analyze PLOT_SAMPLES_PER_FORMAT=200 OUTPUT_DIR=task4-neighbourhood ./run_velocity_samples.sh
 ```
 
 If the laptops use separate output directories, copy the files from one into
@@ -65,13 +73,21 @@ cp task4-neighbourhood_laptop2/velocity-f*-run*-neighbors.csv task4-neighbourhoo
 cp task4-neighbourhood_laptop2/velocity-f*-run*-samples.gen task4-neighbourhood/
 ```
 
-Defaults are 50 runs per format, 20 neighbors per sample, 100 maximum climb
-iterations, 10 stagnation iterations, and 12 parallel workers. Override them,
+Defaults are 200 target samples per format, four saved checkpoints per run, 20
+neighbors per sample, 1000 maximum climb iterations, 20 stagnation iterations,
+1000 neutral-bootstrap steps, and 12 parallel workers. Override them, for
+example:
 for example:
 
 ```bash
-RUNS=60 TOTAL_WORKERS=8 OUTPUT_DIR=task4-neighbourhood ./run_velocity_samples.sh
+TARGET_SAMPLES=200 SAMPLES_PER_RUN=4 TOTAL_WORKERS=8 OUTPUT_DIR=task4-neighbourhood ./run_velocity_samples.sh
 ```
+
+The neutral bootstrap is important for f1, f4, and fH: their simplest
+genotypes can have zero velocity, while valid mutations must first cross a
+neutral plateau before movement appears. It accepts feasible equal-fitness
+mutants temporarily, but the exported checkpoints still remain limited to the
+configured samples per run.
 
 ## Outputs
 
@@ -103,8 +119,8 @@ The launcher then creates:
 
 ## Interpretation
 
-The sample CSV contains the initial poor genotype, every strict best-so-far
-improvement, and the terminal local optimum of each climb. Fitness values are
-not expected to be uniformly spaced: the independent runs and four
-representations provide variation, while the merged report should be inspected
-for large gaps before selecting parents for downstream analysis.
+The internal path contains the initial poor genotype, every strict best-so-far
+improvement, and distinct best candidates from stalled iterations. The exported
+sample CSV keeps fitness-quantile checkpoints from that path, including the
+initial and best candidates, rather than every path step. The merged report
+should be inspected for remaining duplicate values or large fitness gaps.

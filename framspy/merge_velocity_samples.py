@@ -4,6 +4,7 @@ import argparse
 import csv
 import glob
 import os
+from collections import Counter
 from typing import Dict, List
 
 
@@ -29,6 +30,7 @@ def main() -> None:
     parser.add_argument("-input-dir", default="velocity_samples")
     parser.add_argument("-output-prefix", default="velocity_samples/velocity-all")
     parser.add_argument("-minimum-samples", type=int, default=200)
+    parser.add_argument("-minimum-samples-per-format", type=int, default=200)
     args = parser.parse_args()
 
     samples = read_rows(os.path.join(args.input_dir, "velocity-f*-run*-samples.csv"))
@@ -37,9 +39,22 @@ def main() -> None:
     write_rows(args.output_prefix + "-neighbors.csv", neighbors)
 
     unique_fitness = {row["fitness"] for row in samples if row.get("fitness")}
+    sample_counts = Counter(row["genetic_format"] for row in samples)
     feasible_neighbors = sum(row.get("status") == "feasible" for row in neighbors)
     print(f"Saved {len(samples)} samples ({len(unique_fitness)} unique fitness values)")
+    print("Samples by representation: " + ", ".join(f"f{key}={sample_counts.get(key, 0)}" for key in ("0", "1", "4", "H")))
     print(f"Evaluated {len(neighbors)} mutants ({feasible_neighbors} feasible)")
+    insufficient_formats = {
+        genetic_format: count
+        for genetic_format, count in (("0", sample_counts.get("0", 0)), ("1", sample_counts.get("1", 0)), ("4", sample_counts.get("4", 0)), ("H", sample_counts.get("H", 0)))
+        if count < args.minimum_samples_per_format
+    }
+    if insufficient_formats:
+        details = ", ".join(f"f{genetic_format}={count}" for genetic_format, count in insufficient_formats.items())
+        raise SystemExit(
+            f"Not enough samples per representation ({details}); need at least "
+            f"{args.minimum_samples_per_format} each. Increase RUNS or sampling iterations."
+        )
     if len(unique_fitness) < args.minimum_samples:
         raise SystemExit(
             f"Only {len(unique_fitness)} unique fitness values; increase RUNS or MAX_ITERATIONS "

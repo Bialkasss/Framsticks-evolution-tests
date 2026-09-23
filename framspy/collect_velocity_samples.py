@@ -44,6 +44,33 @@ def make_mutant_batch(frams_lib: FramsticksLib, parent: str, count: int) -> Tupl
     return mutants, attempts
 
 
+def neutral_bootstrap(frams_lib: FramsticksLib, parent: str, parent_fitness: float, count: int, max_steps: int) -> Tuple[str, float, int]:
+    """Walk through feasible equal-fitness mutants before greedy climbing."""
+    steps = 0
+    while parent_fitness <= 0 and steps < max_steps:
+        mutants, _ = make_mutant_batch(frams_lib, parent, count)
+        if not mutants:
+            break
+        evaluations = frams_lib.evaluate(mutants)
+        feasible = []
+        for mutant, evaluation in zip(mutants, evaluations):
+            try:
+                fitness = float(evaluation["evaluations"][""]["velocity"])
+            except (KeyError, TypeError, ValueError):
+                continue
+            if math.isfinite(fitness) and fitness != FITNESS_VALUE_INFEASIBLE_SOLUTION and fitness >= parent_fitness:
+                feasible.append((mutant, fitness))
+        if not feasible:
+            break
+        best_fitness = max(fitness for _, fitness in feasible)
+        best = [(mutant, fitness) for mutant, fitness in feasible if fitness == best_fitness]
+        parent, parent_fitness = random.choice(best)
+        steps += 1
+        if parent_fitness > 0:
+            break
+    return parent, parent_fitness, steps
+
+
 def write_gen_file(filename: str, samples: List[Dict[str, object]]) -> None:
     from framsfiles import writer as framswriter
 
@@ -78,7 +105,7 @@ def collect_neighborhoods(frams_lib: FramsticksLib, samples: List[Dict[str, obje
                 fitness = float(evaluation["evaluations"][""]["velocity"])
             except (KeyError, TypeError, ValueError):
                 pass
-            feasible = fitness != FITNESS_VALUE_INFEASIBLE_SOLUTION
+            feasible = math.isfinite(fitness) and fitness != FITNESS_VALUE_INFEASIBLE_SOLUTION
             neighborhoods.append({
                 "run": sample["run"],
                 "genetic_format": sample["genetic_format"],
@@ -91,6 +118,20 @@ def collect_neighborhoods(frams_lib: FramsticksLib, samples: List[Dict[str, obje
                 "mutation_attempts": attempts,
             })
     return neighborhoods
+
+
+def select_samples(path_samples: List[Dict[str, object]], target: int) -> List[Dict[str, object]]:
+    """Keep fitness-spaced checkpoints, including the worst and best samples."""
+    if len(path_samples) <= target:
+        selected = sorted(path_samples, key=lambda sample: float(sample["fitness"]))
+    else:
+        ordered = sorted(path_samples, key=lambda sample: float(sample["fitness"]))
+        indexes = [round(index * (len(ordered) - 1) / (target - 1)) for index in range(target)]
+        selected = [ordered[index] for index in indexes]
+        selected[0] = path_samples[0]
+    for sample_index, sample in enumerate(selected):
+        sample["sample_index"] = sample_index
+    return selected
 
 
 def run(args: argparse.Namespace) -> Tuple[int, int]:
@@ -106,20 +147,32 @@ def run(args: argparse.Namespace) -> Tuple[int, int]:
     if parent_fitness is None:
         raise RuntimeError("The simplest genotype could not be evaluated")
 
-    samples: List[Dict[str, object]] = []
+    path_samples: List[Dict[str, object]] = []
 
-    def save_sample(genotype: str, fitness: float, iteration: int) -> None:
-        samples.append({
+    saved_genotypes = set()
+
+    def save_sample(genotype: str, fitness: float, iteration: int, parent_genotype: str) -> None:
+        if genotype in saved_genotypes:
+            return
+        saved_genotypes.add(genotype)
+        path_samples.append({
             "run": args.run,
             "genetic_format": args.genetic_format,
             "iteration": iteration,
-            "sample_index": len(samples),
+            "sample_index": len(path_samples),
             "genotype": genotype,
             "fitness": fitness,
-            "parent_genotype": "" if not samples else samples[-1]["genotype"],
+            "parent_genotype": parent_genotype,
         })
 
-    save_sample(parent, parent_fitness, 0)
+    save_sample(parent, parent_fitness, 0, "")
+    bootstrap_parent, bootstrap_fitness, bootstrap_steps = neutral_bootstrap(
+        frams_lib, parent, parent_fitness, args.neighbors, args.neutral_steps
+    )
+    if bootstrap_parent != parent:
+        previous_parent = parent
+        parent, parent_fitness = bootstrap_parent, bootstrap_fitness
+        save_sample(parent, parent_fitness, bootstrap_steps, previous_parent)
     stagnant = 0
     iteration = 0
     while iteration < args.max_iterations and stagnant < args.stagnation:
@@ -141,13 +194,20 @@ def run(args: argparse.Namespace) -> Tuple[int, int]:
             if feasible and (best_fitness is None or fitness > best_fitness):
                 best_genotype, best_fitness = mutant, fitness
 
-        if best_fitness is not None and best_fitness > parent_fitness:
+        previous_parent = parent
+        improved = best_fitness is not None and best_fitness > parent_fitness
+        if improved:
             parent, parent_fitness = best_genotype, best_fitness
-            save_sample(parent, parent_fitness, iteration)
+            save_sample(parent, parent_fitness, iteration, previous_parent)
             stagnant = 0
         else:
             stagnant += 1
+            # Keep the best candidate from each stalled iteration as a
+            # landscape sample, without changing the greedy parent.
+            if best_genotype is not None:
+                save_sample(best_genotype, best_fitness, iteration, previous_parent)
 
+    samples = select_samples(path_samples, args.samples_per_run)
     neighborhoods = collect_neighborhoods(frams_lib, samples, args.neighbors)
     os.makedirs(args.output_dir, exist_ok=True)
     prefix = os.path.join(args.output_dir, f"velocity-f{args.genetic_format}-run{args.run}")
@@ -159,7 +219,9 @@ def run(args: argparse.Namespace) -> Tuple[int, int]:
             writer.writeheader()
             writer.writerows(rows)
     write_gen_file(prefix + "-samples.gen", samples)
-    print(f"f{args.genetic_format} run {args.run}: {len(samples)} samples, {len(neighborhoods)} mutants")
+    with open(prefix + "-complete", "w", encoding="ascii") as marker:
+        marker.write("complete\n")
+    print(f"f{args.genetic_format} run {args.run}: {len(samples)} saved samples from {len(path_samples)} path candidates, {len(neighborhoods)} mutants, {bootstrap_steps} neutral steps")
     return len(samples), len(neighborhoods)
 
 
@@ -174,9 +236,15 @@ def main() -> None:
     parser.add_argument("-neighbors", type=int, default=20)
     parser.add_argument("-max-iterations", type=int, default=100)
     parser.add_argument("-stagnation", type=int, default=10)
+    parser.add_argument("-neutral-steps", type=int, default=1000, help="Maximum neutral mutations used to escape zero-fitness starting plateaus.")
+    parser.add_argument("-samples-per-run", type=int, default=4, help="Number of evenly spaced path checkpoints to save.")
     args = parser.parse_args()
     if args.neighbors < 20:
         parser.error("-neighbors must be at least 20")
+    if args.neutral_steps < 0:
+        parser.error("-neutral-steps must not be negative")
+    if args.samples_per_run < 2:
+        parser.error("-samples-per-run must be at least 2")
     run(args)
 
 
