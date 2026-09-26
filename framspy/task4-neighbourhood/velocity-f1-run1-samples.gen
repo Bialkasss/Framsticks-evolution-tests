@@ -5,3 +5,24 @@ format:1
 run:1
 sample_index:0
 
+org:
+genotype:(rFXrL(X[|]), ,X)
+velocity:0.00011212306418166604
+format:1
+run:1
+sample_index:1
+
+org:
+genotype:L(rCFX[T]rL(X[@,1:1][*][|,-3:-0.594]), X)
+velocity:0.0018798556100561158
+format:1
+run:1
+sample_index:2
+
+org:
+genotype:L(rCFX[T]rL(qX[*][*][|, -3:-0.594]), X)
+velocity:0.0050754320470791795
+format:1
+run:1
+sample_index:3
+

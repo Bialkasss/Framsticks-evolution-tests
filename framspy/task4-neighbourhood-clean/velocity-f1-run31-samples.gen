@@ -1,0 +1,28 @@
+org:
+genotype:X
+velocity:0.0
+format:1
+run:31
+sample_index:0
+
+org:
+genotype:(LX[T][|, -1:20.199], lX[@,-2:1])
+velocity:0.00048118398456788636
+format:1
+run:31
+sample_index:1
+
+org:
+genotype:(LX[T][|, -1:20.871, r:1], lX[@, -2:2.374])
+velocity:0.0009722211652762454
+format:1
+run:31
+sample_index:2
+
+org:
+genotype:(LX[S][T][|, -1:20.171, r:1], lX[@, -2:2.563])
+velocity:0.0010395297082511678
+format:1
+run:31
+sample_index:3
+

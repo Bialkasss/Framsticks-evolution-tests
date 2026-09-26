@@ -5,3 +5,24 @@ format:1
 run:7
 sample_index:0
 
+org:
+genotype:RRFFCMX[@,1:-4.8][G]XRX
+velocity:0.00013616140320415245
+format:1
+run:7
+sample_index:1
+
+org:
+genotype:RRFFCMX[@,1:-3.53,p:0.935][G]XRXqX
+velocity:0.00033573529847237576
+format:1
+run:7
+sample_index:2
+
+org:
+genotype:RRFFCMX[@, 1:-3.586, p:0.961][G]XRX[S]FX
+velocity:0.0003453172281167461
+format:1
+run:7
+sample_index:3
+

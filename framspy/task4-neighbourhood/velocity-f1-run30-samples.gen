@@ -5,3 +5,24 @@ format:1
 run:30
 sample_index:0
 
+org:
+genotype:XCX[|,2:4.072][*][T][G][@, -2:5.997]
+velocity:0.002019517142278721
+format:1
+run:30
+sample_index:1
+
+org:
+genotype:LXCX[|,2:7.621][*][T][G][@, -2:4.535]
+velocity:0.005651178902070807
+format:1
+run:30
+sample_index:2
+
+org:
+genotype:LXCX[|,2:7.621][*][T][@, -1:5.219]
+velocity:0.0065121591828226615
+format:1
+run:30
+sample_index:3
+

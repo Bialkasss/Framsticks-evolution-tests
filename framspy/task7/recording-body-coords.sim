@@ -1,0 +1,34 @@
+sim_params:
+expdef:standard-eval
+evalplan:~
+:numparts,numjoints,numneurons,numconnections,instances,lifespan,velocity,distance,vertvel,vertpos,fit,fit_stdev,time,data->bodyrecording~
+usercode:~
+function onBorn(cr)
+{
+	super_onBorn(cr);
+	cr.data->bodyrecording=[];
+}
+
+function onCreaturesUpdate(cr)
+{
+	record(cr);
+}
+
+function addGenotypePerformanceFromCreature(g, cr)
+{
+	super_addGenotypePerformanceFromCreature(g, cr);
+	g.data->bodyrecording = cr.data->bodyrecording;
+	return g;
+}
+
+function record(cr)
+{
+	const STORE_ALL_PART_COORDS = 0;
+	if (cr.perf_measuring == 1)
+	{
+		var cog = cr.centerOfGravity.toVector;
+		cr.data->bodyrecording.add(cog);
+	}
+}
+
+~

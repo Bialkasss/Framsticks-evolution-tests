@@ -1,0 +1,28 @@
+org:
+genotype:X
+velocity:0.0
+format:1
+run:24
+sample_index:0
+
+org:
+genotype:(((qqX[|, 3:25.78][S][T, rz:0][T, ry:-0.604, rz:0]), ), FX[Gpart])
+velocity:0.0001914227307318723
+format:1
+run:24
+sample_index:1
+
+org:
+genotype:(f((qqX[|, 3:27.633][S][T, rz:0][T, ry:-0.604, rz:0]), ), FX[@,-1:2.502])
+velocity:0.0005347022735551645
+format:1
+run:24
+sample_index:2
+
+org:
+genotype:(f((qqX[|, 3:27.961][S][T, rz:0][T, ry:-0.604, rz:0]), ), FX[Gpart][@, -2:2.502])
+velocity:0.0006114547616744685
+format:1
+run:24
+sample_index:3
+

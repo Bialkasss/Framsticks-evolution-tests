@@ -5,3 +5,24 @@ format:1
 run:4
 sample_index:0
 
+org:
+genotype:RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042,p:1]
+velocity:0.00016994643596452666
+format:1
+run:4
+sample_index:1
+
+org:
+genotype:RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.31,p:0.941]
+velocity:0.00041206267118225115
+format:1
+run:4
+sample_index:2
+
+org:
+genotype:XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.435, p:0.941]
+velocity:0.0004226474405086887
+format:1
+run:4
+sample_index:3
+

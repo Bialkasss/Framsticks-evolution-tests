@@ -1,0 +1,28 @@
+org:
+genotype:X
+velocity:0.0
+format:1
+run:59
+sample_index:0
+
+org:
+genotype:XRCmMX[|,1:-0.745][T]cX
+velocity:0.0009547963309116678
+format:1
+run:59
+sample_index:1
+
+org:
+genotype:RX[G]RCmMX[|, 1:-0.849][T]cX
+velocity:0.003497359496269886
+format:1
+run:59
+sample_index:2
+
+org:
+genotype:RXRCmMX[N, 2:1][|, 1:-0.849][T]rrcX
+velocity:0.0037123652811379927
+format:1
+run:59
+sample_index:3
+

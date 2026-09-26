@@ -39,9 +39,39 @@ def frams_evaluate(frams_lib, individual):
 		first_genotype_data = data[0]
 		evaluation_data = first_genotype_data["evaluations"]
 		default_evaluation_data = evaluation_data[""]
-		fitness = [default_evaluation_data[crit] for crit in OPTIMIZATION_CRITERIA]
-		if OPTIMIZATION_CRITERIA == ["vertpos"] and default_evaluation_data["vertpos"] <= 0:
-			fitness = [-0.001 / (1 + default_evaluation_data["numjoints"])]
+		recording = np.asarray(
+			default_evaluation_data["data->bodyrecording"],
+			dtype=float,
+		)
+
+		if len(recording) < 4:
+			fitness = [FITNESS_VALUE_INFEASIBLE_SOLUTION]
+		else:
+			displacement = np.diff(recording, axis=0)
+			midpoint = max(1, len(displacement) // 2)
+			early_displacement = displacement[:midpoint]
+			late_displacement = displacement[midpoint:]
+			early_speed = max(0.0, np.mean(early_displacement[:, 0]))
+			late_speed = max(0.0, np.mean(late_displacement[:, 0]))
+			forward_progress = displacement[:, 0].sum()
+			path_length = np.linalg.norm(displacement, axis=1).sum()
+			straightness = max(0.0, forward_progress) / max(path_length, 1e-9)
+			consistency = np.mean(displacement[:, 0] > 0.0)
+
+			lateral_drift = np.mean(np.abs(displacement[:, 1]))
+			vertical_drift = np.mean(np.abs(displacement[:, 2]))
+
+			swimming_fitness = (
+				(0.25 * early_speed + 0.75 * late_speed)
+				* (0.5 + 0.5 * consistency)
+				* (0.75 + 0.25 * straightness)
+				- 0.05 * lateral_drift
+				- 0.02 * vertical_drift
+			)
+
+			fitness = [float(swimming_fitness)]
+			if OPTIMIZATION_CRITERIA == ["vertpos"] and default_evaluation_data["vertpos"] <= 0:
+				fitness = [-0.001 / (1 + default_evaluation_data["numjoints"])]
 	except (KeyError, TypeError) as e:  # the evaluation may have failed for an invalid genotype (such as X[@][@] with "Don't simulate genotypes with warnings" option), or because the creature failed to stabilize, or for some other reason
 		valid = False
 		print('Problem "%s" so could not evaluate genotype "%s", hence assigned it a special ("infeasible solution") fitness value: %s' % (str(e), genotype, FITNESS_CRITERIA_INFEASIBLE_SOLUTION))

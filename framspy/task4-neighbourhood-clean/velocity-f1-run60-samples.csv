@@ -1,0 +1,5 @@
+run,genetic_format,iteration,sample_index,genotype,fitness,parent_genotype
+60,1,0,0,X,0.0,
+60,1,12,1,"LXRClmX[*][@,-1:1,p:0.856][S]RX",3.341119197887439e-05,"LXRClmX[*][@,-1:1,p:0.856][S]X"
+60,1,25,2,"LXRClmX[*][@,-1:2.46,p:0.776][S]RX",3.343783407656835e-05,"LXRClmX[*][@,-1:1,p:0.776][S]RX"
+60,1,38,3,"LXRClmX[*][@,-1:2.68,p:0.776][S]RX",3.343783407656835e-05,"LXRClmX[*][@,-1:1,p:0.776][S]RX"

@@ -1,0 +1,28 @@
+org:
+genotype:X
+velocity:0.0
+format:1
+run:8
+sample_index:0
+
+org:
+genotype:rXXRmCfMX[Gpart][*]X[|,-2:-1.839,r:1]
+velocity:0.0006432551163079515
+format:1
+run:8
+sample_index:1
+
+org:
+genotype:(rlX, XRmCfMX[Gpart,rz:0][*]X[|, -2:-1.895])
+velocity:0.00452746748335759
+format:1
+run:8
+sample_index:2
+
+org:
+genotype:(lX[T], XRmCfMX[Gpart][*]X[|, -2:-3.812])
+velocity:0.0046442757512182575
+format:1
+run:8
+sample_index:3
+

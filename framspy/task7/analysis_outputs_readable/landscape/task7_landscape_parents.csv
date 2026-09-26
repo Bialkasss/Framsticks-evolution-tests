@@ -1,0 +1,11 @@
+representation,parent_id,rank_group,parent_fitness,genotype
+Final F1,1,worst,0.8221085163635837,"LL(, dXX[G][|, 12:1]RfX[|, 6:1.249][S][S]gXqXrGX[|, 10:1]RlX[N, in:0.8, 9:1]FX[Water], (Lf(FX[Water][|, -1:-5.187, r:1, p:0.652, r:1]LLfX[@, -4:1]), lbX[N, -7:1]LlMlQX[N, 1:1]X[Sin, -10:1]LfX[Sin][Sin, -11:0.678]))"
+Final F1,2,middle,0.1850322262351971,"((c(FfLX[Sin,5:1]bXrFQCfX[G][Water])), MX[Delay, 1:1,-3:1][Delay, 3:1, 0:1,-3:1][Sin][@, -1:-5.038, p:0.993]FX[S][N, -1:1, -6:1, -6:1,-6:1]FLFX[|, -4:1])"
+Final F1,3,middle,1.695086870406392,"FXDXrLfqX[Delay,5:1][*][S][@, 1:1][Sin, -4:1]dLXrLX[N, -3:1][|][Sin]qMX[|, 2:1][Water][Delay, -3:1, t:117][S][Sin, -11:-3.596][@, -1:1.935]"
+Final F1,4,middle,1.5371409294480334,"rr(, RXLbXrMX[N, 7:1, si:-999][Sin]MX[*][*][|, -3:1]X[|,-4:1][S][Gpart], Rf(, , DXX[Delay, -2:1]))"
+Final F1,5,best,0.0638863390542248,"fDXbX[|,1:1]GXDXdXMLX[S][G][S][@, p:0.921][N, 0:1, -4:1,fo:0.04][|, 1:1][Sin]"
+Final F4,1,worst,0.00019569814330458305,"/*4*/<DQlL<X,rQq><N:N[-1:0.44]>cN:|,#2#3>>>R<R<N:*><rrmMQQfCQll,lCllXl#1>cfCl>N:|#2>>N:N[0:-0.999]>"
+Final F4,2,middle,0.1053348052908765,"/*4*/<RMMCLQ<<<,XRMLlLq#1>>RlN:@[-1:1.369]><cqlFN:Gpart#1:+!::+!:>>N:S#2>>,LqmN:Gpart#2#1>>>rM<rrMMfcFMq<rrMlfCLgQFXRl#3>>qN:Sin[2:1.254]>N:@[2:0.402],>"
+Final F4,3,middle,0.3489984540524582,"/*4*/fmcm<<Qmq<RmLLmLLmL<RFcLqLcqLML<FLmqqqqXQ,#1#2#3m>>>>fqqqXF#2#2#3,>#4>>>><N:Water,#2#3>>>N:N[0:0.133]>m<<N:Water>LfMN:|[-3:0.324]:+/:>cq,<c<qXrQF,#2#3c>>>F<mN:Water>N:S>rmQLN:|[1:3.498]>N:T:-!:#2:+/:>>N:@[3:5.702]>"
+Final F4,4,middle,0.02063192414400091,"/*4*/<r<DX><FMML<ML<L<MLL<MLL<LMM<<<rLFL<,,<LL<bX>q<L<X#1>>XRQlF#1#2rrrFMfL>>><QN:|[-2:-1.326]:+!:><l<N:Gpart#2>>N:N,[-6:1.045]><r<N:S>N:Water:+!:>N:Delay[-7:-2.162]>RcLLN:Sin:+!:[5:-4.724]>cN:Sin>N:Sin[-4:1.456]#2>>CN:Sin[8:1.513]>,N:N[-1:-0.788][-1:-3.582]:+!:#2>><N:S,>N:N:+=:#2>>N:Water>N:Water>N:N#2>>N:Water>N:Water>N:N:-/:,[15:-2.478][11:-1.977][11:0.432]>"
+Final F4,5,best,0.515188302114261,/*4*/lLL<<gX><<X><X>LM<XrrmQM>L<MFDX>N:|:-!:[-1:1.887]#1>>N:Sin>N:@>

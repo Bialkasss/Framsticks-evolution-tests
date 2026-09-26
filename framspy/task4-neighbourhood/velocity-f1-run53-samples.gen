@@ -1,0 +1,28 @@
+org:
+genotype:X
+velocity:0.0
+format:1
+run:53
+sample_index:0
+
+org:
+genotype:FC(RCqX[*] ,LLLX[@, -1:-0.518,p:0.988,p:1]fCX)
+velocity:8.111179008505772e-05
+format:1
+run:53
+sample_index:1
+
+org:
+genotype:FC(RCqX[*] ,LLLX[|,-1:-0.409][@, -2:-0.487,p:0.988]fX)
+velocity:0.003071406792055516
+format:1
+run:53
+sample_index:2
+
+org:
+genotype:FC(RCX[T][*], LLLX[|, -1:-0.416][@, -2:-0.487, p:0.988]rffX)
+velocity:0.0034853496263777396
+format:1
+run:53
+sample_index:3
+

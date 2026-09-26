@@ -5,3 +5,24 @@ format:1
 run:26
 sample_index:0
 
+org:
+genotype:mC(rlX[|, 1:0.975,r:1][*]X, RX)
+velocity:3.57514310030059e-05
+format:1
+run:26
+sample_index:1
+
+org:
+genotype:mCX(rlX[|, 1:-1.108,r:0.891,r:1][*]LX, X)
+velocity:8.551941520368002e-05
+format:1
+run:26
+sample_index:2
+
+org:
+genotype:mCX(rlX[|, 1:-5.426,r:0.891,r:1][*]LX, X)
+velocity:8.551941520368002e-05
+format:1
+run:26
+sample_index:3
+

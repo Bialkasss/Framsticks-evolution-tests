@@ -1,2 +1,5 @@
 run,genetic_format,iteration,sample_index,genotype,fitness,parent_genotype
 4,1,0,0,X,0.0,
+4,1,32,1,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042,p:1]",0.00016994643596452666,"RXQlCCFX[Gpart,rz:0]X[@,-1:8.042,p:1]"
+4,1,52,2,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.31,p:0.941]",0.00041206267118225115,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.437,p:0.941]"
+4,1,91,3,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.435, p:0.941]",0.0004226474405086887,"XQlCCqX[Gpart,rz:0]LFX[@,-1:6.435,p:0.941]"

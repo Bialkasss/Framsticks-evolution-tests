@@ -1,0 +1,28 @@
+org:
+genotype:X
+velocity:0.0
+format:1
+run:3
+sample_index:0
+
+org:
+genotype:m(qXm(QLFX[|, 1:0.965,p:0.25][*]), RRX)
+velocity:0.00041458469087746837
+format:1
+run:3
+sample_index:1
+
+org:
+genotype:(qXm(QLFX[|, 1:0.965,r:1][*]), RX[|,-1:1])
+velocity:0.0008583502237763387
+format:1
+run:3
+sample_index:2
+
+org:
+genotype:(qXm(QLFX[|, 1:0.965][*]), QX[|,-1:2.431])
+velocity:0.0008773092808314003
+format:1
+run:3
+sample_index:3
+

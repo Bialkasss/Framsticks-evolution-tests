@@ -1,0 +1,5 @@
+representation,parent_id,rank_group,mutant_id,parent_fitness,mutant_fitness,delta_fitness,status,genotype
+Final F1,1,worst,1,0.2902477967057372,-0.005514850074377496,-0.2957626467801147,feasible,"LL(, dXX[G][|, 12:1]RfX[|, 6:1.249][S][S]gXqXrGX[|]RlX[N, in:0.8, 9:1]FX[Water], (Lf(FX[Water][|, -1:-5.187, r:1, p:0.652, r:1]LLfX[@, -4:1]), lbX[N, -7:1]LlMlQX[N, 1:1]X[Sin, -10:1]LfX[Sin][Sin, -11:0.678]))"
+Final F1,2,best,1,0.07016313952124698,-6.265302347035983e-08,-0.07016320217427044,feasible,fDXbX[|]GXDXdX
+Final F4,1,worst,1,0.00025365080565787886,0.0019800854594183314,0.0017264346537604527,feasible,"/*4*/<DQlL<Xc,rQq><N:N[-1:0.44]>cN:|,#2#3>>>R<R<N:*><rrmMQQfCQll,lCllXl#1>cfCl>N:|#2>>N:N[0:-0.999]>"
+Final F4,2,best,1,0.9776373387566003,-0.0015542979382453662,-0.9791916366948457,feasible,/*4*/lLL<<gX><<X><LM<XrrmQM>L<MFDX>N:|:-!:[-1:1.887]#1>>X>N:Sin>N:@>

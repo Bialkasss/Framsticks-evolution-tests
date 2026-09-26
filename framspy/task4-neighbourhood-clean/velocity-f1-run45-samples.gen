@@ -1,0 +1,28 @@
+org:
+genotype:X
+velocity:0.0
+format:1
+run:45
+sample_index:0
+
+org:
+genotype:(LCX[*][@, -1:2.161]FXC(MLCX[|,-2:1.295]), fX)
+velocity:0.00035699970836014863
+format:1
+run:45
+sample_index:1
+
+org:
+genotype:(FLLCX[*][@, -1:0.616]FXRRMC(MCLCX[|, -2:1]), qfX)
+velocity:0.00044698371445636183
+format:1
+run:45
+sample_index:2
+
+org:
+genotype:(FLLFCX[*][@, -1:2]XRRMFC(MLCLCX[|, -2:1,p:0.326]), RRfX)
+velocity:0.000619922478163712
+format:1
+run:45
+sample_index:3
+

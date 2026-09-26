@@ -5,3 +5,24 @@ format:4
 run:49
 sample_index:0
 
+org:
+genotype:/*4*/RLLLLL,qLQLQff<R<lX>LLfqLX#2LQF>>Xf>
+velocity:4.7676485161307256e-05
+format:4
+run:49
+sample_index:1
+
+org:
+genotype:/*4*/RLLLLL,LqLLLQlf<R<lX>LLLLfqLX#6#4LQF>F>>X>
+velocity:4.809212466784671e-05
+format:4
+run:49
+sample_index:2
+
+org:
+genotype:/*4*/RLLMLLL,L<X>ffqLLLfQlff<R<l<X>N:Gpart>LLL<L<fqLXr#5#4rLQF>>>N:@>N:|>X>
+velocity:0.000662690198439885
+format:4
+run:49
+sample_index:3
+

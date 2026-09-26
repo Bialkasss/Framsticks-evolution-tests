@@ -1,0 +1,5 @@
+run,genetic_format,iteration,sample_index,genotype,fitness,parent_genotype
+54,1,0,0,X,0.0,
+54,1,12,1,"LmCX[G]qLXX[|,-1:6.288]",0.003789311689673506,"LmCX[G]qLXX[|,-1:8.425]"
+54,1,28,2,"LmCX[G]qLXX[|,-1:12.376]",0.004831472141999808,"LmCX[G]qLXX[|,-1:8.425]"
+54,1,15,3,"LmCX[G]qLXX[*][|, -2:8.425]",0.005733887082319543,"LmCX[G]qLXX[|,-1:8.425]"

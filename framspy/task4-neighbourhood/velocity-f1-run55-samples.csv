@@ -1,0 +1,5 @@
+run,genetic_format,iteration,sample_index,genotype,fitness,parent_genotype
+55,1,0,0,X,0.0,
+55,1,8,1,"qCX[|,1:0.829][Gpart]X",0.0015121370881532364,"qCX[|,1:0.923][Gpart]X"
+55,1,19,2,"qCCX[|,1:0.689,r:1][Gpart]rX",0.0021778885499836175,"qCCX[|,1:0.689][Gpart]rX"
+55,1,32,3,"qCCX[|, 1:0.715][Gpart]rX[Gpart]",0.002209328041830284,"qCCX[|,1:0.715][Gpart]rX"

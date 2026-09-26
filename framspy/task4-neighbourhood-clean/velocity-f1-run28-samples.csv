@@ -1,0 +1,5 @@
+run,genetic_format,iteration,sample_index,genotype,fitness,parent_genotype
+28,1,0,0,X,0.0,
+28,1,1,1,rcX[|][@],7.141681846125619e-07,rlcX[|][@]
+28,1,2,2,rcfX[|][@],2.3439764764585437e-05,rcX[|][@]
+28,1,5,3,"rcfX[|,r:1][@]",2.3439764764585437e-05,rcfX[|][@]

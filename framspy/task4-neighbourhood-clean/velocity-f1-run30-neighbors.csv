@@ -1,0 +1,81 @@
+run,genetic_format,sample_index,parent_genotype,parent_fitness,genotype,fitness,status,mutation_attempts
+30,1,0,X,0.0,RX,0.0,feasible,77
+30,1,0,X,0.0,X[Gpart],0.0,feasible,77
+30,1,0,X,0.0,mX,0.0,feasible,77
+30,1,0,X,0.0,X[@],0.0,feasible,77
+30,1,0,X,0.0,X[*],0.0,feasible,77
+30,1,0,X,0.0,XX,0.0,feasible,77
+30,1,0,X,0.0,cX,0.0,feasible,77
+30,1,0,X,0.0,rX,0.0,feasible,77
+30,1,0,X,0.0,LX,0.0,feasible,77
+30,1,0,X,0.0,X[S],0.0,feasible,77
+30,1,0,X,0.0,X[T],0.0,feasible,77
+30,1,0,X,0.0,qX,0.0,feasible,77
+30,1,0,X,0.0,FX,0.0,feasible,77
+30,1,0,X,0.0,MX,0.0,feasible,77
+30,1,0,X,0.0,lX,0.0,feasible,77
+30,1,0,X,0.0,CX,0.0,feasible,77
+30,1,0,X,0.0,X[G],0.0,feasible,77
+30,1,0,X,0.0,X[|],0.0,feasible,77
+30,1,0,X,0.0,QX,0.0,feasible,77
+30,1,0,X,0.0,X[N],0.0,feasible,77
+30,1,1,"f(f(, cX[|, 1:2.719,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,"f(f(, cX[|, 1:1.896,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,feasible,20
+30,1,1,"f(f(, cX[|, 1:2.719,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,"f(f(, cX[|, 1:4.407,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,feasible,20
+30,1,1,"f(f(, cX[|, 1:2.719,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,"f(f(, cX[|, 1:2.719,r:0.992]rrqX[*]LXqX), FXCX)",0.00030479098690727995,feasible,20
+30,1,1,"f(f(, cX[|, 1:2.719,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,"f(f(, cX[|, 1:4.949,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,feasible,20
+30,1,1,"f(f(, cX[|, 1:2.719,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,"f(f(, cX[|, 1:2.719,r:1]rrqX[*]LXqX), FXX)",0.0002713812858666995,feasible,20
+30,1,1,"f(f(, cX[|, 1:2.719,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,"f(f(, cX[|, 1:2.719,r:0.875]rrqX[*]LXqX), FXCX)",0.0002715653744842976,feasible,20
+30,1,1,"f(f(, cX[|, 1:2.719,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,"f(f(, cX[|, 1:0.618,r:1]rrqX[*]LXqX), FXCX)",0.00016457407743390533,feasible,20
+30,1,1,"f(f(, cX[|, 1:2.719,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,"f(f(, cX[|, 1:1.977,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,feasible,20
+30,1,1,"f(f(, cX[|, 1:2.719,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,"f(f(, cX[|, 1:5.431,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,feasible,20
+30,1,1,"f(f(, cX[|, 1:2.719,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,"f(f(, cX[|, 1:-1.579,r:1]rrqX[*]LXqX), FXCX)",0.00013229625752864637,feasible,20
+30,1,1,"f(f(, cX[|, 1:2.719,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,"f(f(, cX[|, 1:2.719,r:1]rrqX[*]LXqX), FXCX[|,-1:1])",6.65298381404768e-05,feasible,20
+30,1,1,"f(f(, cX[|, 1:2.719,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,"f(f(, cX[|, 1:0.7,r:1]rrqX[*]LXqX), FXCX)",0.0002009125951083658,feasible,20
+30,1,1,"f(f(, cX[|, 1:2.719,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,"f(f(, cX[|, 1:2.719,r:1]rrqX[*]LX[@,-1:1]qX), FXCX)",0.00021180031630882502,feasible,20
+30,1,1,"f(f(, cX[|, 1:2.719,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,"f(f(, cX[|, 1:5.575,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,feasible,20
+30,1,1,"f(f(, cX[|, 1:2.719,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,"f(f(, cX[|, 1:3.519,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,feasible,20
+30,1,1,"f(f(, cX[|, 1:2.719,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,"f(f(, X[|, 1:2.719,r:1]rrqX[*]LXqX), FXCX)",1.6560812593967303e-06,feasible,20
+30,1,1,"f(f(, cX[|, 1:2.719,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,"f(f(, cX[|, 1:3.65,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,feasible,20
+30,1,1,"f(f(, cX[|, 1:2.719,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,"f(f(, cX[|, 1:3.344,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,feasible,20
+30,1,1,"f(f(, cX[|, 1:2.719,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,"f(f(, cX[|, 1:3.94,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,feasible,20
+30,1,1,"f(f(, cX[|, 1:2.719,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,"f(f(, cX[|, 1:6.697,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,feasible,20
+30,1,2,"fCfc(f(,, cX[|, 1:2.003,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,"fCfc(f(,, cX[|, 1:2.003]rrqfX[*]LXX), fFXCX,)",0.00013589035828006878,feasible,20
+30,1,2,"fCfc(f(,, cX[|, 1:2.003,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,"fCfc(f(,, cX[|, 1:2.003,r:1]rrqfX[*]LXX), fFCXCX,)",0.00030990168925621315,feasible,20
+30,1,2,"fCfc(f(,, cX[|, 1:2.003,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,"fCfc(f(,, cX[|, 1:1.877,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,feasible,20
+30,1,2,"fCfc(f(,, cX[|, 1:2.003,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,"fCfc(f(,, cX[|, 1:1.333,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,feasible,20
+30,1,2,"fCfc(f(,, cX[|, 1:2.003,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,"fCfc(f(,, cX[|, 1:-2.133,r:1]rrqfX[*]LXX), fFXCX,)",0.00014559382088335515,feasible,20
+30,1,2,"fCfc(f(,, cX[|, 1:2.003,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,"fCfc(f(,, cXrrqfX[*]LXX), fFXCX,)",2.1533426765284265e-07,feasible,20
+30,1,2,"fCfc(f(,, cX[|, 1:2.003,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,"fCfc(f(,, cX[|, 1:0.12,r:1]rrqfX[*]LXX), fFXCX,)",4.0882230943674265e-05,feasible,20
+30,1,2,"fCfc(f(,, cX[|, 1:2.003,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,"fCfc(f(,, cX[|,r:1]rrqfX[*]LXX), fFXCX,)",2.2571367570464336e-07,feasible,20
+30,1,2,"fCfc(f(,, cX[|, 1:2.003,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,"fCfc(f(,, cX[|, 1:2.958,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,feasible,20
+30,1,2,"fCfc(f(,, cX[|, 1:2.003,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,"fCfc(f(,, cX[|, 1:0.449,r:1]rrqfX[*]LXX), fFXCX,)",0.00018257241678415188,feasible,20
+30,1,2,"fCfc(f(,, cX[|, 1:2.003,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,"fCfc(f(,, cX[|, 1:0.948,r:1]rrqfX[*]LXX), fFXCX,)",0.0003658611587827608,feasible,20
+30,1,2,"fCfc(f(,, cX[|, 1:2.003,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,"fCfc(f(,, cX[|, 1:2.003,r:1]rrqfX[*]LXX), fFXCX[@,-1:1],)",0.00037937920961674166,feasible,20
+30,1,2,"fCfc(f(,, cX[|, 1:2.003,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,"fCfc(f(,, cX[|, 1:1.213,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,feasible,20
+30,1,2,"fCfc(f(,, cX[|, 1:2.003,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,"fCfc(f(,, cX[|, 1:2.24,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,feasible,20
+30,1,2,"fCfc(f(,, cX[|, 1:2.003,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,"fCfc(f(,, cX[|, 1:-2.383,r:1]rrqfX[*]LXX), fFXCX,)",0.00014559382088335515,feasible,20
+30,1,2,"fCfc(f(,, cX[|, 1:2.003,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,"fCfc(f(,, cX[|, 1:3.618,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,feasible,20
+30,1,2,"fCfc(f(,, cX[|, 1:2.003,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,"fCfc(f(,, cX[|, 1:-0.075,r:1]rrqfX[*]LXX), fFXCX,)",1.396616829433889e-05,feasible,20
+30,1,2,"fCfc(f(,, cX[|, 1:2.003,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,"fCfc(f(,, cX[|, 1:2.087,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,feasible,20
+30,1,2,"fCfc(f(,, cX[|, 1:2.003,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,"fCfc(f(,, cX[|, 1:7.385,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,feasible,20
+30,1,2,"fCfc(f(,, cX[|, 1:2.003,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,"fCfc(f(,, cX[|, 1:2.279,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,feasible,20
+30,1,3,"fCfc(fcf(,, cX[|, 1:1,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,"fCfc(fcf(,, cX[|, 1:1,r:1,p:0.124]rrqfX[*]fLLLXFX), fFXCQX,)",5.627721866502556e-07,feasible,21
+30,1,3,"fCfc(fcf(,, cX[|, 1:1,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,"fCfc(fcf(,, cX[|, 1:2.687,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,feasible,21
+30,1,3,"fCfc(fcf(,, cX[|, 1:1,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,"fCfc(fcf(,, cX[|, 1:3.874,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,feasible,21
+30,1,3,"fCfc(fcf(,, cX[|, 1:1,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,"fCfc(fcf(,, cX[|, 1:-2.384,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",6.530664682832027e-06,feasible,21
+30,1,3,"fCfc(fcf(,, cX[|, 1:1,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,"fCfc(fcf(,, cX[|, 1:-0.974,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",6.530664682832027e-06,feasible,21
+30,1,3,"fCfc(fcf(,, cX[|, 1:1,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,"fCfc(fcf(,, cX[|, 1:2.647,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,feasible,21
+30,1,3,"fCfc(fcf(,, cX[|, 1:1,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,"fCfc(fcf(,, cX[|, 1:1,r:1,p:0.255]rrqfX[*]fLLLXFX), fFXCQX,)",0.0004246132375577484,feasible,21
+30,1,3,"fCfc(fcf(,, cX[|, 1:1,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,"fCfc(fcf(,, cX[|, 1:-0.178,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",6.530664682832027e-06,feasible,21
+30,1,3,"fCfc(fcf(,, cX[|, 1:1,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,"fCfc(fcf(,, cX[|, 1:2.192,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,feasible,21
+30,1,3,"fCfc(fcf(,, cX[|, 1:1,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,"fCfc(fcf(,, cX[|, 1:-0.52,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",6.530664682832027e-06,feasible,21
+30,1,3,"fCfc(fcf(,, cX[|, 1:1,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,"fCfc(fcf(,, cX[|, 1:-0.561,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",6.530664682832027e-06,feasible,21
+30,1,3,"fCfc(fcf(,, cX[|, 1:1,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,"fCfc(fcf(,, cX[|, 1:1.475,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,feasible,21
+30,1,3,"fCfc(fcf(,, cX[|, 1:1,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,"fCfc(fcf(,, cX[|, 1:-0.285,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",6.530664682832027e-06,feasible,21
+30,1,3,"fCfc(fcf(,, cX[|, 1:1,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,"fCfc(fcf(,, cX[|,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",2.439568575459832e-07,feasible,21
+30,1,3,"fCfc(fcf(,, cX[|, 1:1,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,"fCfc(fcf(,, cX[|, 1:2.746,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,feasible,21
+30,1,3,"fCfc(fcf(,, cX[|, 1:1,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,"fCfc(fcf(,, cX[|, 1:0.705,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.00030034490943119395,feasible,21
+30,1,3,"fCfc(fcf(,, cX[|, 1:1,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,"fCfc(fcf(,, cX[|, 1:1.095,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,feasible,21
+30,1,3,"fCfc(fcf(,, cX[|, 1:1,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,"fCfc(fcf(,, cX[|, 1:1,r:1]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,feasible,21
+30,1,3,"fCfc(fcf(,, cX[|, 1:1,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,"fCfc(fcf(,, cX[|, 1:1.378,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,feasible,21
+30,1,3,"fCfc(fcf(,, cX[|, 1:1,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,"fCfc(fcf(, , cX[|, 1:1, r:1, p:0.25]rrqfX[*]fLLLXFX), fFXCQX[*], )",0.000425101933368751,feasible,21

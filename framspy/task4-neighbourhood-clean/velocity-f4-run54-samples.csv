@@ -1,0 +1,5 @@
+run,genetic_format,iteration,sample_index,genotype,fitness,parent_genotype
+54,4,0,0,/*4*/X,0.0,
+54,4,5,1,/*4*/Rm<CLf<XMc>N:|>X>,0.0006640728220395018,/*4*/Rm<CLf<Xc>N:|>X>
+54,4,14,2,/*4*/Rm<CLf<Xc>N:|#2>>X>,0.0006640728220395018,/*4*/Rm<CLf<Xc>N:|>X>
+54,4,23,3,/*4*/<Rm<CLf<Xc>N:|>X>N:S>,0.0006640728220395018,/*4*/Rm<CLf<Xc>N:|>X>

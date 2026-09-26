@@ -1,0 +1,5 @@
+run,genetic_format,iteration,sample_index,genotype,fitness,parent_genotype
+11,1,0,0,X,0.0,
+11,1,38,1,"XccqcXRX[Gpart][@,-1:3.725]X",0.0012532447349564867,"XccqcXRX[Gpart][@,-1:3.616]X"
+11,1,95,2,"X[|,1:1.994]ccqcXRX[Gpart][@,-1:3.952]FqX",0.0022768260793290316,"X[|,1:2.027]ccqcXRX[Gpart][@,-1:3.952]FqX"
+11,1,158,3,"X[|, 2:1.914]ccqcX[T]RfX[Gpart][@, -1:3.885]FqX",0.0023333898535376992,"X[|,1:1.914]ccqcXRfX[Gpart][@,-1:3.885]FqX"

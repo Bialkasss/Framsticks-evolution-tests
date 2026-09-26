@@ -1,0 +1,5 @@
+representation,parent_id,rank_group,parent_fitness,genotype
+Final F1,1,worst,0.2902477967057372,"LL(, dXX[G][|, 12:1]RfX[|, 6:1.249][S][S]gXqXrGX[|, 10:1]RlX[N, in:0.8, 9:1]FX[Water], (Lf(FX[Water][|, -1:-5.187, r:1, p:0.652, r:1]LLfX[@, -4:1]), lbX[N, -7:1]LlMlQX[N, 1:1]X[Sin, -10:1]LfX[Sin][Sin, -11:0.678]))"
+Final F1,2,best,0.07016313952124698,"fDXbX[|,1:1]GXDXdXMLX[S][G][S][@, p:0.921][N, 0:1, -4:1,fo:0.04][|, 1:1][Sin]"
+Final F4,1,worst,0.00025365080565787886,"/*4*/<DQlL<X,rQq><N:N[-1:0.44]>cN:|,#2#3>>>R<R<N:*><rrmMQQfCQll,lCllXl#1>cfCl>N:|#2>>N:N[0:-0.999]>"
+Final F4,2,best,0.9776373387566003,/*4*/lLL<<gX><<X><X>LM<XrrmQM>L<MFDX>N:|:-!:[-1:1.887]#1>>N:Sin>N:@>

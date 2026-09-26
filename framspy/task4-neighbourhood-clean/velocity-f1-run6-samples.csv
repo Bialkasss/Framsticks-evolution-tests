@@ -1,0 +1,5 @@
+run,genetic_format,iteration,sample_index,genotype,fitness,parent_genotype
+6,1,0,0,X,0.0,
+6,1,20,1,"FllFqX[T][S]FcX[@,-1:1,p:1]FLCFFX",1.9038641771460692e-06,"FllFqX[T][S]FcFX[@,-1:1,p:1]FLCFFX"
+6,1,39,2,"(FllFqX[@, 1:-0.3][T][S]Q(cX[|, -1:1][@, -2:1, p:0.97]), FLCFFX)",0.0004263707661932834,"(FllFqX[@, 1:-0.3][T][S](cX[|, -1:1][@, -2:1, p:0.97]), FLCFFX)"
+6,1,59,3,"(FllFqX[@, 1:-0.3][T][S]Q(cX[|, -1:1][@, -2:4.167, p:0.97]), FLCFFX)",0.0004263707661932834,"(FllFqX[@, 1:-0.3][T][S]Q(cX[|, -1:1][@, -2:1, p:0.97]), FLCFFX)"

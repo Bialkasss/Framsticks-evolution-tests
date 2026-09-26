@@ -5,3 +5,24 @@ format:1
 run:46
 sample_index:0
 
+org:
+genotype:CqCX[|,1:0.99]MX[Gpart]
+velocity:0.002187685484666845
+format:1
+run:46
+sample_index:1
+
+org:
+genotype:CqfCX[|,1:0.983]rFX[Gpart]
+velocity:0.002288919692507093
+format:1
+run:46
+sample_index:2
+
+org:
+genotype:CqfCX[*][|, 1:0.983]FQX[Gpart]
+velocity:0.002313225948719924
+format:1
+run:46
+sample_index:3
+

@@ -1,2 +1,5 @@
 run,genetic_format,iteration,sample_index,genotype,fitness,parent_genotype
 45,1,0,0,X,0.0,
+45,1,4,1,"RLcX[|,1:1.303]X[G]",0.0006563820658829128,"RLcX[|,1:1]X[G]"
+45,1,25,2,"RLcX[S][|, 1:1.554]X[G]",0.0006569319569226684,"RLcX[|,1:1.554]X[G]"
+45,1,36,3,"RLcX[G][|, 1:1.589]X[G]",0.000669794669599355,"RLcX[|,1:1.589]X[G]"

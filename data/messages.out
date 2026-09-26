@@ -1,3 +1,10 @@
 VMNeuronManager.autoload: Neuro classes added: Delay Light Nn PIDP PIDV SeeLight SeeLight2 S0 S1 Thr 
 UserScripts.autoload: 20 user scripts added.
 MainProgram.Start: Application initialized
+Simulator.load: Loading from 'C:\MAGISTER\SEM1\BIO_ALGS\Framsticks\framspy\task7\manual-water.sim'
+Simulator.load: Loaded population settings, simulator settings from 'C:\MAGISTER\SEM1\BIO_ALGS\Framsticks\framspy\task7\manual-water.sim'
+Simulator.load: Loading from 'C:\MAGISTER\SEM1\BIO_ALGS\Framsticks\framspy\task7\task7-f4-compromise-hof.run5.gen'
+Simulator.load: Loaded genotype from 'C:\MAGISTER\SEM1\BIO_ALGS\Framsticks\framspy\task7\task7-f4-compromise-hof.run5.gen'
+Simulator.load: Loading from 'C:\MAGISTER\SEM1\BIO_ALGS\Framsticks\framspy\task7\5th-try-it-swimmmsss\task7-f1-compromise-hof.run3.gen'
+Simulator.load: Loaded genotype from 'C:\MAGISTER\SEM1\BIO_ALGS\Framsticks\framspy\task7\5th-try-it-swimmmsss\task7-f1-compromise-hof.run3.gen'
+MainProgram.Finish: Application ends

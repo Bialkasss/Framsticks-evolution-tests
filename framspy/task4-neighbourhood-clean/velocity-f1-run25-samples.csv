@@ -1,0 +1,5 @@
+run,genetic_format,iteration,sample_index,genotype,fitness,parent_genotype
+25,1,0,0,X,0.0,
+25,1,58,1,"RCMX[|,1:7.147]X[T]",0.002502997669216862,"RCMX[|,1:4.422]X[T]"
+25,1,45,2,"RCMX[|,1:4.422,r:1]X[T]",0.0026338068438553244,"RCMX[|,1:4.422]X[T]"
+25,1,79,3,"RCMX[|,1:9.71]CX[T,r:1]",0.003001878475792236,"RCMX[|,1:9.71]CX[T]"

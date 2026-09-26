@@ -5,3 +5,24 @@ format:1
 run:27
 sample_index:0
 
+org:
+genotype:XlqcFX[|,1:2.568][S]X
+velocity:7.621014485516365e-07
+format:1
+run:27
+sample_index:1
+
+org:
+genotype:XlqcFX[|,1:2.856][S]X
+velocity:7.621014485516365e-07
+format:1
+run:27
+sample_index:2
+
+org:
+genotype:XlqcFX[|,1:3.551][S]X
+velocity:7.621014485516365e-07
+format:1
+run:27
+sample_index:3
+

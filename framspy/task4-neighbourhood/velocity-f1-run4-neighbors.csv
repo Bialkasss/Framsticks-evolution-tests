@@ -1,21 +1,81 @@
 run,genetic_format,sample_index,parent_genotype,parent_fitness,genotype,fitness,status,mutation_attempts
-4,1,0,X,0.0,lX,0.0,feasible,86
-4,1,0,X,0.0,RX,0.0,feasible,86
-4,1,0,X,0.0,qX,0.0,feasible,86
-4,1,0,X,0.0,X[|],0.0,feasible,86
-4,1,0,X,0.0,XX,0.0,feasible,86
-4,1,0,X,0.0,MX,0.0,feasible,86
-4,1,0,X,0.0,CX,0.0,feasible,86
-4,1,0,X,0.0,X[Gpart],0.0,feasible,86
-4,1,0,X,0.0,LX,0.0,feasible,86
-4,1,0,X,0.0,X[S],0.0,feasible,86
-4,1,0,X,0.0,X[N],0.0,feasible,86
-4,1,0,X,0.0,cX,0.0,feasible,86
-4,1,0,X,0.0,X[*],0.0,feasible,86
-4,1,0,X,0.0,fX,0.0,feasible,86
-4,1,0,X,0.0,mX,0.0,feasible,86
-4,1,0,X,0.0,QX,0.0,feasible,86
-4,1,0,X,0.0,X[@],0.0,feasible,86
-4,1,0,X,0.0,rX,0.0,feasible,86
-4,1,0,X,0.0,X[T],0.0,feasible,86
-4,1,0,X,0.0,X[G],0.0,feasible,86
+4,1,0,X,0.0,X[S],0.0,feasible,36
+4,1,0,X,0.0,XX,0.0,feasible,36
+4,1,0,X,0.0,rX,0.0,feasible,36
+4,1,0,X,0.0,X[Gpart],0.0,feasible,36
+4,1,0,X,0.0,X[T],0.0,feasible,36
+4,1,0,X,0.0,X[N],0.0,feasible,36
+4,1,0,X,0.0,FX,0.0,feasible,36
+4,1,0,X,0.0,RX,0.0,feasible,36
+4,1,0,X,0.0,QX,0.0,feasible,36
+4,1,0,X,0.0,fX,0.0,feasible,36
+4,1,0,X,0.0,CX,0.0,feasible,36
+4,1,0,X,0.0,lX,0.0,feasible,36
+4,1,0,X,0.0,X[@],0.0,feasible,36
+4,1,0,X,0.0,MX,0.0,feasible,36
+4,1,0,X,0.0,X[G],0.0,feasible,36
+4,1,0,X,0.0,mX,0.0,feasible,36
+4,1,0,X,0.0,cX,0.0,feasible,36
+4,1,0,X,0.0,LX,0.0,feasible,36
+4,1,0,X,0.0,X[|],0.0,feasible,36
+4,1,0,X,0.0,qX,0.0,feasible,36
+4,1,1,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042,p:1]",0.00016994643596452666,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:5.818,p:1]",5.923255923772971e-05,feasible,20
+4,1,1,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042,p:1]",0.00016994643596452666,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:9.683,p:1]",0.00013508285457374677,feasible,20
+4,1,1,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042,p:1]",0.00016994643596452666,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:4.426,p:1]",8.484335668262543e-05,feasible,20
+4,1,1,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042,p:1]",0.00016994643596452666,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.166,p:1]",0.00010337270635893915,feasible,20
+4,1,1,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042,p:1]",0.00016994643596452666,"RXQlCCFX[Gpart,rz:0]X[@,-1:8.042,p:1]",0.00016994643596452666,feasible,20
+4,1,1,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042,p:1]",0.00016994643596452666,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:9.335,p:1]",8.817056781253323e-05,feasible,20
+4,1,1,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042,p:1]",0.00016994643596452666,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.172,p:1]",0.00011742290074852663,feasible,20
+4,1,1,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042,p:1]",0.00016994643596452666,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042,p:1,p:1]",0.00016994643596452666,feasible,20
+4,1,1,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042,p:1]",0.00016994643596452666,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.856,p:1]",0.00011796430432401419,feasible,20
+4,1,1,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042,p:1]",0.00016994643596452666,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.933,p:1]",0.0001446425870298324,feasible,20
+4,1,1,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042,p:1]",0.00016994643596452666,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:9.057,p:1]",0.00013064957835348713,feasible,20
+4,1,1,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042,p:1]",0.00016994643596452666,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.999,p:1]",0.00010138513305707888,feasible,20
+4,1,1,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042,p:1]",0.00016994643596452666,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,p:1]",2.2319162689857087e-06,feasible,20
+4,1,1,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042,p:1]",0.00016994643596452666,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:3.689,p:1]",6.277242193562006e-05,feasible,20
+4,1,1,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042,p:1]",0.00016994643596452666,"RXQlCCFX[Gpart,rz:0,ry:0]fX[@,-1:8.042,p:1]",0.00013106774509723427,feasible,20
+4,1,1,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042,p:1]",0.00016994643596452666,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:10.626,p:1]",0.00011808625619809846,feasible,20
+4,1,1,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042,p:1]",0.00016994643596452666,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:9.543,p:1]",0.00012206202523681451,feasible,20
+4,1,1,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042,p:1]",0.00016994643596452666,"RXrQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042,p:1]",6.249128257186191e-05,feasible,20
+4,1,1,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042,p:1]",0.00016994643596452666,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:5.177,p:1]",1.3307259461288077e-05,feasible,20
+4,1,1,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042,p:1]",0.00016994643596452666,"RXQlCCFX[Gpart,rz:0,ry:0]X[@,-1:8.042]",5.658787480881636e-05,feasible,20
+4,1,2,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.31,p:0.941]",0.00041206267118225115,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:9.719,p:0.941]",0.00032866330264742446,feasible,20
+4,1,2,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.31,p:0.941]",0.00041206267118225115,"(RX, QlCCqX[Gpart, rz:0]LFX[@, -1:6.31, p:0.941])",1.9416649325957588e-05,feasible,20
+4,1,2,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.31,p:0.941]",0.00041206267118225115,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:5.173,p:0.941]",0.0003335516753625239,feasible,20
+4,1,2,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.31,p:0.941]",0.00041206267118225115,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:5.739,p:0.941]",0.0003767018693712297,feasible,20
+4,1,2,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.31,p:0.941]",0.00041206267118225115,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:4.972,p:0.941]",0.00029091786082530846,feasible,20
+4,1,2,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.31,p:0.941]",0.00041206267118225115,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:7.716,p:0.941]",0.0003842004907165824,feasible,20
+4,1,2,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.31,p:0.941]",0.00041206267118225115,"RXQlCCqX[Gpart,rz:0,ry:0]LFX[@,-1:6.31,p:0.941]",0.00041206267118225115,feasible,20
+4,1,2,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.31,p:0.941]",0.00041206267118225115,"QlCCqX[Gpart,rz:0]LFX[@,-1:6.31,p:0.941]",2.3020943985224644e-05,feasible,20
+4,1,2,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.31,p:0.941]",0.00041206267118225115,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.114,p:0.941]",0.00040431581273438775,feasible,20
+4,1,2,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.31,p:0.941]",0.00041206267118225115,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:7.095,p:0.941]",0.0003659416089004785,feasible,20
+4,1,2,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.31,p:0.941]",0.00041206267118225115,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.496,p:0.941]",0.0004095588493634677,feasible,20
+4,1,2,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.31,p:0.941]",0.00041206267118225115,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.602,p:0.941]",0.0003876442396220189,feasible,20
+4,1,2,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.31,p:0.941]",0.00041206267118225115,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:4.03,p:0.941]",0.0002046337437534631,feasible,20
+4,1,2,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.31,p:0.941]",0.00041206267118225115,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:4.617,p:0.941]",0.00023850737806887192,feasible,20
+4,1,2,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.31,p:0.941]",0.00041206267118225115,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:8.259,p:0.941]",0.0003625284009877675,feasible,20
+4,1,2,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.31,p:0.941]",0.00041206267118225115,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:8.844,p:0.941]",0.0003508803558610736,feasible,20
+4,1,2,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.31,p:0.941]",0.00041206267118225115,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:10.289,p:0.941]",0.0003146201621382711,feasible,20
+4,1,2,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.31,p:0.941]",0.00041206267118225115,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:2.84,p:0.941]",0.00011906725882974105,feasible,20
+4,1,2,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.31,p:0.941]",0.00041206267118225115,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:2.455,p:0.941]",4.628522263487744e-05,feasible,20
+4,1,2,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:6.31,p:0.941]",0.00041206267118225115,"RXQlCCqX[Gpart,rz:0]LFX[@,-1:8.813,p:0.941]",0.00035345660371297754,feasible,20
+4,1,3,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.435, p:0.941]",0.0004226474405086887,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:5.335, p:0.941]",0.0003524032347755496,feasible,23
+4,1,3,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.435, p:0.941]",0.0004226474405086887,"XQlCCqX[*][Gpart, rz:0]LX[@, -1:6.435, p:0.941]",0.00029167958523311813,feasible,23
+4,1,3,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.435, p:0.941]",0.0004226474405086887,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.343, p:0.941]",0.0004063920293951199,feasible,23
+4,1,3,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.435, p:0.941]",0.0004226474405086887,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:5.602, p:0.941]",0.0003639049342200672,feasible,23
+4,1,3,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.435, p:0.941]",0.0004226474405086887,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:3.414, p:0.941]",0.0001359440674387885,feasible,23
+4,1,3,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.435, p:0.941]",0.0004226474405086887,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:8.304, p:0.941]",0.00035907265601315183,feasible,23
+4,1,3,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.435, p:0.941]",0.0004226474405086887,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.916, p:0.941]",0.0003695323788905357,feasible,23
+4,1,3,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.435, p:0.941]",0.0004226474405086887,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.309, p:0.941]",0.0004010709060761159,feasible,23
+4,1,3,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.435, p:0.941]",0.0004226474405086887,"XQlCCqX[*][Gpart, rz:0]LFX[@, p:0.941]",3.3942446159348093e-07,feasible,23
+4,1,3,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.435, p:0.941]",0.0004226474405086887,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:7.052, p:0.941]",0.0003610236091078728,feasible,23
+4,1,3,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.435, p:0.941]",0.0004226474405086887,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.435, p:0.842]",0.0003917391342237318,feasible,23
+4,1,3,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.435, p:0.941]",0.0004226474405086887,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:9.145, p:0.941]",0.00034440637975871884,feasible,23
+4,1,3,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.435, p:0.941]",0.0004226474405086887,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:4.647, p:0.941]",0.00023865604178036973,feasible,23
+4,1,3,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.435, p:0.941]",0.0004226474405086887,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:4.949, p:0.941]",0.00029226015946586485,feasible,23
+4,1,3,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.435, p:0.941]",0.0004226474405086887,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:10.334, p:0.941]",0.0003059509399868607,feasible,23
+4,1,3,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.435, p:0.941]",0.0004226474405086887,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:7.14, p:0.941]",0.0003711583893430866,feasible,23
+4,1,3,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.435, p:0.941]",0.0004226474405086887,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.744, p:0.941]",0.00037938160363291663,feasible,23
+4,1,3,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.435, p:0.941]",0.0004226474405086887,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:9.104, p:0.941]",0.00035094795471718373,feasible,23
+4,1,3,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.435, p:0.941]",0.0004226474405086887,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:4.634, p:0.941]",0.00023669237718623476,feasible,23
+4,1,3,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:6.435, p:0.941]",0.0004226474405086887,"XQlCCqX[*][Gpart, rz:0]LFX[@, -1:4.837, p:0.941]",0.0002718643777561258,feasible,23

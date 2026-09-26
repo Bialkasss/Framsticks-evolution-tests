@@ -5,3 +5,24 @@ format:1
 run:5
 sample_index:0
 
+org:
+genotype:QLmCX[|,1:6.394]LlLLX[T][|,-1:1]
+velocity:0.0012523400656121416
+format:1
+run:5
+sample_index:1
+
+org:
+genotype:QLmCX[|,1:9.078]LFlLX[T][|,-1:1.564]
+velocity:0.002513212917592488
+format:1
+run:5
+sample_index:2
+
+org:
+genotype:QLmCX[S][|, 1:11.667]LFlLX[T][|, -1:1.564]
+velocity:0.002541529824384768
+format:1
+run:5
+sample_index:3
+

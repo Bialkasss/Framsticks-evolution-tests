@@ -1,0 +1,12 @@
+sim_params:
+wrldtyp:0
+wrldsiz:20.0
+wrldmap:
+wrldwat:4.0
+wrldbnd:1
+wrldg:1.0
+creath:1.0
+placement:0
+rotation:0
+neuadd_G:1
+neuadd_Water:1

@@ -5,3 +5,24 @@ format:1
 run:14
 sample_index:0
 
+org:
+genotype:McqFX[G][T,r:0.887,ry:0]LX[|,-2:9.365]QX
+velocity:0.0001580198992420803
+format:1
+run:14
+sample_index:1
+
+org:
+genotype:McqFX[G][T,r:0.887,ry:0,rz:0]LX[|,-2:9.923]QX
+velocity:0.0002738618136783542
+format:1
+run:14
+sample_index:2
+
+org:
+genotype:McqFX[G][T,r:0.887,ry:0,r:1]LX[|,-2:9.923]QX
+velocity:0.0002738618136783542
+format:1
+run:14
+sample_index:3
+

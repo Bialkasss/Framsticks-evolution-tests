@@ -5,3 +5,24 @@ format:1
 run:50
 sample_index:0
 
+org:
+genotype:RLX(,MX[|,2:4.99][@,1:-11.315,p:1][T] flFX)
+velocity:0.0005165267948308036
+format:1
+run:50
+sample_index:1
+
+org:
+genotype:RLX(,MX[|,2:7.74][@,1:-18.884,p:1][T] flFLX)
+velocity:0.0009872289193624448
+format:1
+run:50
+sample_index:2
+
+org:
+genotype:RLX(, MX[|, 2:8.31][@, 1:-23.622, p:1][T]flFLX[N, -1:1])
+velocity:0.0010249448357969363
+format:1
+run:50
+sample_index:3
+

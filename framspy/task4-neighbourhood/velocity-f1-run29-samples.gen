@@ -5,3 +5,24 @@ format:1
 run:29
 sample_index:0
 
+org:
+genotype:CQCCfX[@,1:1]FX[*][@,-1:1,p:1]RLX[@,-2:0.473,p:0.951]
+velocity:6.653212320749853e-05
+format:1
+run:29
+sample_index:1
+
+org:
+genotype:XCQCCfX[@,1:3.857]LXFX[*][@,-1:0.418,p:0.997,p:0.984]RRLLX[|,-2:1]
+velocity:0.00018864264218214046
+format:1
+run:29
+sample_index:2
+
+org:
+genotype:XCQCCX[@,1:3.857]LXFX[*][@,-1:0.418,p:0.997,p:0.984]RLLX[@,-2:0.841][|,-3:2.746]
+velocity:0.00022515294024426594
+format:1
+run:29
+sample_index:3
+

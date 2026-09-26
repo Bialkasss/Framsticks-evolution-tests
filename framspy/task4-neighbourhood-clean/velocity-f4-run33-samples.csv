@@ -1,0 +1,5 @@
+run,genetic_format,iteration,sample_index,genotype,fitness,parent_genotype
+33,4,0,0,/*4*/X,0.0,
+33,4,8,1,"/*4*/Cf<<FCc<mlX#2,r>>N:*>X>Xf>",3.8453409811871795e-05,"/*4*/Cf<<FCc<mlX#2,r>>N:*>X>X>"
+33,4,16,2,"/*4*/Cf<<FCc<mlX#2,r>>N:*>X>XfQ>",3.8453409811871795e-05,"/*4*/Cf<<FCc<mlX#2,r>>N:*>X>Xf>"
+33,4,28,3,"/*4*/Cf<<FCc<mlX#2,r>>cN:*>X>Xf>",3.8453409811871795e-05,"/*4*/Cf<<FCc<mlX#2,r>>N:*>X>Xf>"

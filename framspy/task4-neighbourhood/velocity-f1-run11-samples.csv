@@ -1,2 +1,5 @@
 run,genetic_format,iteration,sample_index,genotype,fitness,parent_genotype
 11,1,0,0,X,0.0,
+11,1,17,1,"L(FLqX, rrcCqQXX[T][@, -1:-5.471,p:1]FX[|,-2:1])",0.0008798307107002236,"L(FLqX, rrcCqQXX[T][@, -1:-5.471,p:1]FX)"
+11,1,36,2,"LX(LqX, rrcCqQXX[T][@, -1:-1.75,p:1]FX[|,-2:7.386])",0.0023252093239503582,"L(LqX, rrcCqQXX[T][@, -1:-1.75,p:1]FX[|,-2:7.386])"
+11,1,54,3,"LX[S](LqQX, rrcCqQXX[T][@, -1:-0.9, p:1]FX[|, -2:7.386])",0.0031128473965626904,"LX(LqQX, rrcCqQXX[T][@, -1:-0.9,p:1]FX[|,-2:7.386])"

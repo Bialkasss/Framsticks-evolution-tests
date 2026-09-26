@@ -5,3 +5,24 @@ format:1
 run:37
 sample_index:0
 
+org:
+genotype:C(LX[T,rz:0][|, -1:9.387], X[@, -2:-1.026])
+velocity:0.0004773204191784137
+format:1
+run:37
+sample_index:1
+
+org:
+genotype:CL(LX[T][|, -1:4.136], X[@, -2:-2.128])
+velocity:0.0028604615055856024
+format:1
+run:37
+sample_index:2
+
+org:
+genotype:CL(LX[T][|, -1:4.905], X[T][@, -3:-2.128])
+velocity:0.005289971495216097
+format:1
+run:37
+sample_index:3
+

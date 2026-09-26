@@ -5,3 +5,24 @@ format:4
 run:4
 sample_index:0
 
+org:
+genotype:/*4*/<X><<X#3rFC#4cM,ML>>>N:|>X>
+velocity:0.0016984059713317581
+format:4
+run:4
+sample_index:1
+
+org:
+genotype:/*4*/c<XR><<X#3rC#6cM,ML>>cc>N:|>qX>
+velocity:0.0038692315854451566
+format:4
+run:4
+sample_index:2
+
+org:
+genotype:/*4*/c<MXR><<X#3rC#6cM,ML>>cc>N:|>X>
+velocity:0.0038692315854451566
+format:4
+run:4
+sample_index:3
+

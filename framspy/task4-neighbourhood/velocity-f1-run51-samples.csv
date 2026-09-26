@@ -1,0 +1,5 @@
+run,genetic_format,iteration,sample_index,genotype,fitness,parent_genotype
+51,1,0,0,X,0.0,
+51,1,26,1,"cmmXlcFX[|,1:-4.014][*]",8.113891960185753e-05,"cmmXlcFX[|,1:-1.816][*]"
+51,1,51,2,"RcfmmXclcFX[|,1:-1.076][*]",9.025749493542907e-05,"RcfmmXclcFX[|,1:-1.816][*]"
+51,1,84,3,"cfmmX[T]clqcFX[|, 1:-0.999][*]",9.059741956245403e-05,"cfmmXclqcFX[|,1:-0.999][*]"

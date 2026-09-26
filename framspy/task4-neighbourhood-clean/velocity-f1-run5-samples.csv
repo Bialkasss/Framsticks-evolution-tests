@@ -1,0 +1,5 @@
+run,genetic_format,iteration,sample_index,genotype,fitness,parent_genotype
+5,1,0,0,X,0.0,
+5,1,14,1,"cqX[G][S]lX[|,-2:2.741]XllX",0.0009175808201041256,"cqX[G][S]lX[|,-2:2.895]XllX"
+5,1,7,2,"cqX[G][S]lX[|,-2:2.895,r:1]XllX",0.0009864719475094993,"cqX[G][S]lX[|,-2:2.895]XllX"
+5,1,19,3,"cqX[G][S]lX[G][|, -3:2.895]XllX",0.0009864719475094993,"cqX[G][S]lX[|,-2:2.895]XllX"

@@ -5,3 +5,24 @@ format:4
 run:26
 sample_index:0
 
+org:
+genotype:/*4*/L<<X#1QMf#2f>rLrm>mQl>RRLCM<,MN:G>X>MN:@[1:4.079]>
+velocity:0.00021701699211281586
+format:4
+run:26
+sample_index:1
+
+org:
+genotype:/*4*/L<<X#1QMf#2f>rrLm>mQl>RRLCM<,MN:G>XF>MN:@[1:4.473]>
+velocity:0.00023301636024875236
+format:4
+run:26
+sample_index:2
+
+org:
+genotype:/*4*/L<<X#1QMf#2f>rrLm>Ql>RRLCM<,MN:G>XF>MN:@[1:4.473]>
+velocity:0.00023301636024875236
+format:4
+run:26
+sample_index:3
+

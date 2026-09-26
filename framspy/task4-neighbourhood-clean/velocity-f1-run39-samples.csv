@@ -1,0 +1,5 @@
+run,genetic_format,iteration,sample_index,genotype,fitness,parent_genotype
+39,1,0,0,X,0.0,
+39,1,17,1,"LXlX[*][|,-1:0.381,r:1]QXlcX",3.87963864742595e-05,"LXlX[*][|,-1:0.381]QXlcX"
+39,1,52,2,"MLXlfX[*][|,-1:1.859]QXcX",9.731884912820279e-05,"MLXlfX[*][|,-1:0.656]QXcX"
+39,1,64,3,"MLXlfX[*][|, -1:0.656]QX[G]cX",0.00010615813231907236,"MLXlfX[*][|,-1:0.656]QXcX"

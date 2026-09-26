@@ -5,3 +5,24 @@ format:1
 run:9
 sample_index:0
 
+org:
+genotype:rcLqLffmX[|,1:1][N]ffLX
+velocity:5.747131902478655e-05
+format:1
+run:9
+sample_index:1
+
+org:
+genotype:LcLLffmX[*][|,1:1][N,-2:6.46]LfffLX
+velocity:0.00023730830013673262
+format:1
+run:9
+sample_index:2
+
+org:
+genotype:LcLLMffmX[*][|,1:1][N,-2:3.418,1:1]LfffLX[S]
+velocity:0.00024066654083854854
+format:1
+run:9
+sample_index:3
+

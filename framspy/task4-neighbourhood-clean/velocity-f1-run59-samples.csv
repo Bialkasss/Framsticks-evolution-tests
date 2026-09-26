@@ -1,0 +1,5 @@
+run,genetic_format,iteration,sample_index,genotype,fitness,parent_genotype
+59,1,0,0,X,0.0,
+59,1,9,1,"XRCmMX[|,1:-0.745][T]cX",0.0009547963309116678,"XRCmMX[|,1:0.648][T]cX"
+59,1,27,2,"RX[G]RCmMX[|, 1:-0.849][T]cX",0.003497359496269886,"RXRCmMX[|,1:-0.849][T]cX"
+59,1,50,3,"RXRCmMX[N, 2:1][|, 1:-0.849][T]rrcX",0.0037123652811379927,"RXRCmMX[|,1:-0.849][T]rrcX"

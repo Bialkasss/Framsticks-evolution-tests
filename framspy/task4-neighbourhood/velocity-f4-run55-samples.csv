@@ -1,0 +1,5 @@
+run,genetic_format,iteration,sample_index,genotype,fitness,parent_genotype
+55,4,0,0,/*4*/X,0.0,
+55,4,10,1,/*4*/FmFCQmC<<rLXrm>N:@>X>,2.9546272108841835e-05,/*4*/FmFCQmC<rLXrm>X>
+55,4,21,2,/*4*/Fm<FCmC<rLLLXrm>X>N:T>,3.245610873881661e-05,/*4*/FmFCmC<rLLLXrm>X>
+55,4,35,3,/*4*/<FmFCmC<rLLLXrm>X>N:N[0:0.507]>,3.245610873881661e-05,/*4*/FmFCmC<rLLLXrm>X>

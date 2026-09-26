@@ -5,3 +5,24 @@ format:1
 run:41
 sample_index:0
 
+org:
+genotype:R(LX[|, 1:-0.725][*]q(,RX[Gpart]), RFX)
+velocity:0.0005763977076271343
+format:1
+run:41
+sample_index:1
+
+org:
+genotype:R(LX[|, 1:-0.937][*]q(, RX[Gpart]), FX[N, -2:1])
+velocity:0.002180537586012804
+format:1
+run:41
+sample_index:2
+
+org:
+genotype:R(LX[Gpart][|, 1:-0.768][*]q(, RX[Gpart]), RFX)
+velocity:0.002217220903478732
+format:1
+run:41
+sample_index:3
+

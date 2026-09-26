@@ -1,0 +1,5 @@
+run,genetic_format,iteration,sample_index,genotype,fitness,parent_genotype
+30,1,0,0,X,0.0,
+30,1,51,1,"f(f(, cX[|, 1:2.719,r:1]rrqX[*]LXqX), FXCX)",0.0003078032698683444,"f(f(, cX[|, 1:1,r:1]rrqX[*]LXqX), FXCX)"
+30,1,102,2,"fCfc(f(,, cX[|, 1:2.003,r:1]rrqfX[*]LXX), fFXCX,)",0.0003802775509967084,"fCfc(f(,, cX[|, 1:1,r:1]rrqfX[*]LXX), fFXCX,)"
+30,1,154,3,"fCfc(fcf(,, cX[|, 1:1,r:1,p:0.25]rrqfX[*]fLLLXFX), fFXCQX,)",0.000425101933368751,"fCfc(fcf(,, cX[|, 1:1,r:1]rrqfX[*]fLLLXFX), fFXCQX,)"

@@ -1,0 +1,5 @@
+run,genetic_format,iteration,sample_index,genotype,fitness,parent_genotype
+38,1,0,0,X,0.0,
+38,1,86,1,"XrLLX[G](FfCqX[|,-1:-12.736,r:1]XLX,X,)",0.0011559623860790227,"fXrLLX[G](FfCqX[|,-1:-12.736,r:1]XLX,X,)"
+38,1,200,2,"XrLMcLX[G](FfCqX[|,-1:-17.729,r:1]XrLLX,X,)",0.0046407650942332755,"XrLMcLX[G](FfCqX[|,-1:-17.775,r:1]XrLLX,X,)"
+38,1,258,3,"XrLMcLX[G](FfCqX[|,-1:-17.781,r:1](XLLQX),X,)",0.004726979311905102,"XrLMcLX[G](FfCqX[|,-1:-17.781,r:1]XLLQX,X,)"

@@ -1,2 +1,5 @@
 run,genetic_format,iteration,sample_index,genotype,fitness,parent_genotype
 39,1,0,0,X,0.0,
+39,1,18,1,QfX[@]QcLXLLX[|],0.0001819547973736608,QX[@]QcLXLLX[|]
+39,1,40,2,"qLXLQfXQcLX[Gpart]LLX[|,-1:-2.285,p:0.25]",0.0031859773532533597,"qLXLQfXQcLX[Gpart]LLX[|,-1:-2.285]"
+39,1,67,3,"qMLXLQfXQcLX[T][Gpart]LX[|, -1:-2.353]",0.007624185191803517,"qMLXLQfXQcLX[Gpart]LX[|,-1:-2.353]"

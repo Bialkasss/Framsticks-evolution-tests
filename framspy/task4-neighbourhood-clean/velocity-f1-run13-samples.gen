@@ -1,0 +1,28 @@
+org:
+genotype:X
+velocity:0.0
+format:1
+run:13
+sample_index:0
+
+org:
+genotype:RLCQXQflFX[@,2:-7.439][|,1:-6.897][T]
+velocity:0.0002982249548728188
+format:1
+run:13
+sample_index:1
+
+org:
+genotype:RLCQX[G]QflFX[@, 2:-2.092][|, 1:-5.359][T]
+velocity:0.0004473421261380173
+format:1
+run:13
+sample_index:2
+
+org:
+genotype:RLCQX[N, 3:1]QflFX[@, 2:-1.488][|, 1:-6.897][T]
+velocity:0.0005514554967674302
+format:1
+run:13
+sample_index:3
+

@@ -1,0 +1,5 @@
+run,genetic_format,iteration,sample_index,genotype,fitness,parent_genotype
+59,4,0,0,/*4*/X,0.0,
+59,4,8,1,/*4*/MFmFl<<Xr><fLX>N:|[-1:2.286]>N:*>,9.242059669767375e-05,/*4*/MFml<<Xr><fLX>N:|[-1:2.286]>N:*>
+59,4,18,2,/*4*/MFmFl<<Xr><fLX>L<N:T>N:|[-1:2.286]>N:*>,0.0004978460600552826,/*4*/MFmFl<<Xr><fLX><N:T>N:|[-1:2.286]>N:*>
+59,4,29,3,/*4*/MFmFl<<Xr><fLX><N:T>N:|[-1:2.286]>cN:*>,0.0004978460600552826,/*4*/MFmFl<<Xr><fLX><N:T>N:|[-1:2.286]>N:*>
